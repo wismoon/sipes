@@ -15,7 +15,7 @@ class SuratKeteranganUsahaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'tanggal' => '',
+            // 'tanggal' => '',
             'nomorsurat' => '',
             'nama' => '',
             'tempatlahir' => '',
@@ -35,7 +35,7 @@ class SuratKeteranganUsahaController extends Controller
         $fileName = $request->file_syarat->getClientOriginalName().'-'.time().'.'.$request->file_syarat->extension();
 
         Surat::create([
-            'tanggal' => $request->tanggal,
+            'tanggal' => date('Y-m-d H:i:s'),
             'nomorsurat' => $request->nomorsurat,
             'nama' => $request->nama,
             'tempatlahir' => $request->tempatlahir,

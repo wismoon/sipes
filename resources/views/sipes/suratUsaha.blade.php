@@ -9,7 +9,7 @@
     <form action="{{url('/SuratKeteranganUsaha')}}" method="post" enctype="multipart/form-data">
         @csrf
 
-        <x-input field="tanggal" label="Tanggal" type="date" aria-readonly="tanggal"/>
+        {{-- <x-input field="tanggal" label="Tanggal" type="date" aria-readonly="tanggal"/> --}}
         <x-inputR field="nomorsurat" label="Nomor Surat" type="text" value="   /SK/TRB/III/2021"/>
         {{-- <input type="text" class="form-control" name="Nomor Surat" value="TES" placeholder="Nomor" readonly> --}}
         <x-input field="nama" label="Nama" type="text"/>

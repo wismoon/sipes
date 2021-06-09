@@ -48,7 +48,7 @@ class TableSuratController extends Controller
         ]);
 
         Surat::find($id)->update([
-            // 'tanggal' => $request->tanggal,
+            'tanggal' => date('Y-m-d H:i:s'),
             'nomorsurat' => $request->nomorsurat,
             'nama' => $request->nama,
             'tempatlahir' => $request->tempatlahir,

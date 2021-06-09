@@ -34,7 +34,12 @@
                     @foreach ($pemohon as $row)
                         <tr>
                             <td class="text-center">{{ $loop->iteration }}</td>
-                            <td>{{ $row -> tanggal }}</td>
+                            <td>
+                                <?php
+                                $date = new DateTime($row->tanggal);
+                                echo $date->format('d-m-Y')
+                                ?>
+                            </td>
                             <td>{{ $row -> nomorsurat }}</td>
                             <td>{{ $row -> nama }}</td>
                             <td>{{ $row -> tempatlahir }}</td>
@@ -57,9 +62,6 @@
                                     </button>
                                     <a href="{{('/data/'.$row -> file_syarat)}}" class="btn btn-primary btn-sm"  data-form="{{ $row }}">
                                         <i class="fas fa-file mr-1"></i>
-                                    </a>
-                                    <a href="{{route('cetak', ['surat'=>$row -> id])}}" class=" btn-info btn btn-sm">
-                                        <i class="fas fa-print"></i>
                                     </a>
                                 </form>
                             </td>

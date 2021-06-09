@@ -34,7 +34,12 @@
                     @foreach ($pemohon as $row)
                         <tr>
                             <td class="text-center">{{ $loop->iteration }}</td>
-                            <td>{{ $row -> tanggal }}</td>
+                            <td>
+                                <?php
+                                $date = new DateTime($row->tanggal);
+                                echo $date->format('d-m-Y')
+                                ?>
+                            </td>
                             <td>{{ $row -> nomorsurat }}</td>
                             <td>{{ $row -> nama }}</td>
                             <td>{{ $row -> tempatlahir }}</td>
