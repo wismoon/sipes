@@ -22,11 +22,11 @@ class SuratSeeder extends Seeder
             'agama' => 'Islam',
             'pekerjaan' => 'Mahasiswa',
             'alamat' => 'Jl.Saudara',
+            'nohp' => '08224993123',
             'namausaha' => 'Kampung Durian',
             'alamatusaha' => 'Jl.Kampoeng',
             'jenis_surat' => 'surat keterangan umum',
-            'keterangan' => 'Nama tersebut diatas saat ini Memiliki Usaha Kedai Harian yang terletak di Perum. Griya
-                            Setia Nusa 3 Blok.D1 No.3 RT.01 RW.02 Dusun IV Tarab Mulia Desa Tarai Bangun ',
+            'keterangan' => '',
             'file_syarat' => 'Foto.pdf',
             'status' => 'diproses',
         ]);

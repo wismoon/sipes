@@ -26,6 +26,7 @@ class SuratKeteranganController extends Controller
             'agama' => 'required',
             'pekerjaan' => 'required',
             'alamat' => 'required',
+            'nohp' => 'required',
             'jenis_surat' => 'required',
             'keterangan' => 'required',
             'file_syarat' => 'required:mimes:pdf',
@@ -47,6 +48,7 @@ class SuratKeteranganController extends Controller
             'agama' => $request->agama,
             'pekerjaan' => $request->pekerjaan,
             'alamat' => $request->alamat,
+            'nohp' => $request->nohp,
             'jenis_surat' => $request->jenis_surat,
             'keterangan' => $request->keterangan,
             'file_syarat' => $fileName,
@@ -56,7 +58,7 @@ class SuratKeteranganController extends Controller
 
         if (auth()->user()->is_admin != null)
         {
-            return redirect('surat')->with('tambahSKU', 'Surat Umum');
+            return redirect('surat/daftarsurat')->with('tambahSKU', 'Surat Umum');
         }else
         {
             return redirect()->route('homeland');

@@ -25,6 +25,7 @@
             <div class="col-md-6">
                 <x-input field="pekerjaan" label="Pekerjaan" type="text"/>
                 <x-input field="alamat" label="Alamat" type="text"/>
+                <x-input field="nohp" label="No.Handphone" type="text"/>
                 <x-inputSelectKet field="keterangan" label="Keterangan" type="select"/>
                 <input type="hidden" value="surat keterangan umum" name="jenis_surat">
                 {{-- <x-inputSelect field="jeniskelamin" label="Jenis Kelamin" type="select"/> --}}

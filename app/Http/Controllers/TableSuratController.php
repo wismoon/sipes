@@ -43,6 +43,7 @@ class TableSuratController extends Controller
             'agama' => '',
             'pekerjaan' => '',
             'alamat' => '',
+            'nohp' => '',
             //'keterangan' => 'Surat Keterangan',
             //'file_syarat' => 'required:mimes:pdf',
         ]);
@@ -57,6 +58,7 @@ class TableSuratController extends Controller
             'agama' => $request->agama,
             'pekerjaan' => $request->pekerjaan,
             'alamat' => $request->alamat,
+            'nohp' => $request->nohp,
             'status' => $request->status,
             // 'keterangan' => $request->keterangan,
             // 'file_syarat' => $fileName,

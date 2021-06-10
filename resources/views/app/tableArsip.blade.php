@@ -34,6 +34,7 @@
                     <th scope="col">Agama</th>
                     <th scope="col">Pekerjaan</th>
                     <th scope="col">Alamat</th>
+                    <th scope="col">No.Handphone</th>
                     <th scope="col">Keterangan</th>
                     <th scope="col">Status</th>
                     <th scope="col">Aksi</th>
@@ -57,6 +58,7 @@
                             <td>{{ $row -> agama }}</td>
                             <td>{{ $row -> pekerjaan }}</td>
                             <td>{{ $row -> alamat }}</td>
+                            <td>{{ $row -> nohp }}</td>
                             <td>{{ $row -> jenis_surat }}</td>
                             <td>{{ $row -> status }}</td>
                             <td>
@@ -130,6 +132,10 @@
                         <input type="text" class="form-control" id="alamat" name="alamat" readonly>
                     </div>
                     <div class="form-group">
+                        <label>No.Handphone</label>
+                        <input type="text" class="form-control" id="nohp" name="nohp" readonly>
+                    </div>
+                    <div class="form-group">
                         <label>Jenis Surat</label>
                         <input type="text" class="form-control" id="jenis_surat" name="jenis_surat" readonly>
                     </div>
@@ -174,6 +180,7 @@
         $('#agama').val(form.agama);
         $('#pekerjaan').val(form.pekerjaan);
         $('#alamat').val(form.alamat);
+        $('#nohp').val(form.nohp);
         $('#jenis_surat').val(form.jenis_surat);
         $('#status').val(form.status);
         $('#form-update').attr('action', '/table/' + form.id)

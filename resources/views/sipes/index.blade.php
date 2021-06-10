@@ -24,6 +24,8 @@
   <link href="{{asset('assets/eBusiness/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/eBusiness/lib/animate/animate.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/eBusiness/lib/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{asset('css/iziToast.min.css')}}" rel="stylesheet">
+
 
   <!-- Nivo Slider Theme -->
   <link href="{{asset('assets/eBusiness/css/nivo-slider-theme.css')}}" rel="stylesheet">
@@ -260,7 +262,7 @@
                   <li> <i class="fa fa-check"></i> Surat Keterangan Domisili Dari RT/RW</li>
                   <li> <i class="fa fa-check"></i> Surat Pernyataan</li>
               </ol>
-              <button>Ajukan Surat</button>
+              <button><a href="{{route('surat.createSKU')}}">Ajukan Surat</a></button>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
@@ -273,7 +275,7 @@
                 <li> <i class="fa fa-check"></i> Surat Keterangan Domisili Usaha Dari RT/RW Tempat Usaha</li>
                 <li> <i class="fa fa-check"></i> Photo Usaha</li>
               </ol>
-              <button>Ajukan Surat</button>
+              <button><a href="{{route('surat.createSKUH')}}">Ajukan Surat</a></button>
             </div>
           </div>
         </div>
@@ -282,42 +284,6 @@
   </div>
   <!-- End Service area -->
 
-  {{-- <!-- start pricing area -->
-  <div id="pricing" class="pricing-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Pricing Table</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="pri_table_list active">
-            <h3>basic <br/> <span>$80 / month</span></h3>
-            <ol>
-                <img src="{{asset('assets/eBusiness/img/team/4.jpg')}}" alt="">
-                <li class="check">Online system</li>
-            </ol>
-            <button>sign up now</button>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="pri_table_list active">
-            <h3>standard <br/> <span>$110 / month</span></h3>
-            <ol>
-              <li class="check">Online system</li>
-            </ol>
-            <button>sign up now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End pricing table area --> --}}
-
   <footer>
     <div class="footer-area-bottom">
       <div class="container">
@@ -325,7 +291,7 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                &copy; Copyright <strong>SIPES</strong>. All Rights Reserved
               </p>
             </div>
             <div class="credits">
@@ -335,7 +301,7 @@
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
               -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="#">Muhammad Wisnu Fauzi</a>
             </div>
           </div>
         </div>
@@ -357,6 +323,23 @@
   <script src="{{asset('assets/eBusiness/lib/nivo-slider/js/jquery.nivo.slider.js')}}" type="text/javascript"></script>
   <script src="{{asset('assets/eBusiness/lib/appear/jquery.appear.js')}}"></script>
   <script src="{{asset('assets/eBusiness/lib/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('js/iziToast.min.js')}}"></script>
+  <script>
+  @if(Session::has('ajukanSKU'))
+  // tampilkan toast sukses
+  iziToast.success({
+    title: 'Surat Keterangan Umum',
+    message: 'Telah Berhasil Diajukan',
+  });
+  @endif
+  @if(Session::has('ajukanSKUH'))
+  // tampilkan toast sukses
+  iziToast.success({
+    title: 'Surat Keterangan Usaha',
+    message: 'Telah Berhasil Diajukan',
+  });
+  @endif
+  </script>
 
   <!-- Contact Form JavaScript File -->
   <script src="{{asset('assets/eBusiness/contactform/contactform.js')}}"></script>

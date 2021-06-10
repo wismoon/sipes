@@ -24,6 +24,7 @@ class CreateSuratTable extends Migration
             $table->string('agama');
             $table->string('pekerjaan');
             $table->string('alamat');
+            $table->string('nohp');
             $table->string('namausaha')->nullable();
             $table->string('alamatusaha')->nullable();
             $table->string('keterangan')->nullable();

@@ -17,15 +17,16 @@ class SuratKeteranganUsahaController extends Controller
         $request->validate([
             // 'tanggal' => '',
             // 'nomorsurat' => '',
-            'nama' => '',
-            'tempatlahir' => '',
-            'tanggallahir' => '',
-            'jeniskelamin' => '',
-            'agama' => '',
-            'pekerjaan' => '',
-            'alamat' => '',
-            'namausaha' => '',
-            'alamatusaha' => '',
+            'nama' => 'required',
+            'tempatlahir' => 'required',
+            'tanggallahir' => 'required',
+            'jeniskelamin' => 'required',
+            'agama' => 'required',
+            'pekerjaan' => 'required',
+            'alamat' => 'required',
+            'nohp' => 'required',
+            'namausaha' => 'required',
+            'alamatusaha' => 'required',
             'file_syarat' => 'required:mimes:pdf',
 
         ]);
@@ -44,6 +45,7 @@ class SuratKeteranganUsahaController extends Controller
             'agama' => $request->agama,
             'pekerjaan' => $request->pekerjaan,
             'alamat' => $request->alamat,
+            'nohp' => $request->nohp,
             'namausaha' => $request->namausaha,
             'alamatusaha' => $request->alamatusaha,
             'file_syarat' => $fileName,
@@ -53,7 +55,7 @@ class SuratKeteranganUsahaController extends Controller
 
         if (auth()->user() != null)
         {
-            return redirect('surat')->with('tambahSKUH', 'Surat Usaha');
+            return redirect('surat/daftarsurat')->with('tambahSKUH', 'Surat Usaha');
         }else
         {
             return redirect()->route('homeland');

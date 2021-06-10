@@ -6,7 +6,7 @@
   <div>
     <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
-        <li class="{{ request()->is('surat') ? 'active' : '' }}"><a class="nav-link" href="{{ url('surat') }}"><i class="fas fa-columns"></i> <span>Tambah Surat</span></a></li>
+        <li class="{{ request()->is('surat/daftarsurat') ? 'active' : '' }}"><a class="nav-link" href="{{ route('surat.index') }}"><i class="fas fa-columns"></i> <span>Tambah Surat</span></a></li>
         <li class="{{ request()->is('table') ? 'active' : '' }}"><a href="{{ url('table') }}"><i class="fas fa-table"></i> <span>Tables</span></a></li>
         <li class="{{ request()->is('arsip') ? 'active' : '' }}"><a href="{{ url('arsip') }}"><i class="fas fa-table"></i> <span>Arsip</span></a></li>
         <li class="menu-header">Users</li>

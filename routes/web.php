@@ -27,7 +27,15 @@ Route::get('/arsip', 'TableSuratController@showArsip');
 Route::get('/cetak/{surat?}' , 'CetakController@index')->name('cetak');
 
 //Route::resource('surat', 'SuratController');
-Route::get('/surat', 'SuratController@index')->name('surat');
+Route::prefix('surat')->name('surat.')->group(function(){
+    Route::get('/daftarsurat', 'SuratController@index')->name('index');
+    Route::get('/pemohon', 'SuratController@createPemohon')->name('createSKU');
+    Route::get('/pemohonU', 'SuratController@createPemohonU')->name('createSKUH');
+    Route::post('/store', 'SuratController@storePemohonU')->name('storeU');
+    Route::post('/storeU', 'SuratController@storePemohon')->name('store');
+});
+
+// Route::resource('pemohon', );
 
 //Route Surat
 Route::resource('/SuratKeterangan', 'SuratKeteranganController');
