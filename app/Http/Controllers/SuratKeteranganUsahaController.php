@@ -16,7 +16,7 @@ class SuratKeteranganUsahaController extends Controller
     {
         $request->validate([
             // 'tanggal' => '',
-            'nomorsurat' => '',
+            // 'nomorsurat' => '',
             'nama' => '',
             'tempatlahir' => '',
             'tanggallahir' => '',
@@ -53,7 +53,7 @@ class SuratKeteranganUsahaController extends Controller
 
         if (auth()->user() != null)
         {
-            return view('app.daftarsurat');
+            return redirect('surat')->with('tambahSKUH', 'Surat Usaha');
         }else
         {
             return redirect()->route('homeland');

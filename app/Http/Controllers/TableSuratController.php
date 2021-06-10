@@ -65,10 +65,10 @@ class TableSuratController extends Controller
 
         if($request->status == 'selesai')
         {
-            return redirect('arsip');
+            return redirect('arsip')->with('sukses', 'Berhasil Dong');
         }else
         {
-            return redirect('table');
+            return redirect('table')->with('sukses', 'Berhasil Dong');
         }
     }
 
@@ -76,6 +76,6 @@ class TableSuratController extends Controller
     {
         Surat::find($id)->delete();
 
-        return redirect('table')->with('sukses', 'Data berhasil dihapus!');
+        return redirect('table')->with('suksesDelete', 'Berhasil Delet');
     }
 }

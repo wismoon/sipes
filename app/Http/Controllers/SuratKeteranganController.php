@@ -18,7 +18,7 @@ class SuratKeteranganController extends Controller
     {
         $request->validate([
             // 'tanggal' => 'required',
-            'nomorsurat' => 'required',
+            // 'nomorsurat' => 'required',
             'nama' => 'required',
             'tempatlahir' => 'required',
             'tanggallahir' => 'required',
@@ -54,9 +54,9 @@ class SuratKeteranganController extends Controller
 
         //dd($request);
 
-        if (auth()->user() != null)
+        if (auth()->user()->is_admin != null)
         {
-            return view('app.daftarsurat');
+            return redirect('surat')->with('tambahSKU', 'Surat Umum');
         }else
         {
             return redirect()->route('homeland');

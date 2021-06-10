@@ -19,28 +19,32 @@ class CetakController extends Controller
         {
             $pdf = PDF::loadView('cetakSurat.cetak_surat1', compact('surat'))->setPaper(array(0, 0, 450.28, 730.89), 'portrait');
             return $pdf->stream();
-            // return $tses = $pdf->download($surat->nama."-".".pdf");
+            // return $tes = $pdf->download($surat->nama."-".".pdf");
             // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }elseif ($surat->keterangan == 'Penghasilan')
         {
             $pdf = PDF::loadView('cetakSurat.cetak_surat1-1', compact('surat'))->setPaper('f4', 'potrait');
             return $pdf->stream();
-            //return $pdf->download($surat->nama."-".".pdf");
+            // return $tes = $pdf->download($surat->nama."-".".pdf");
+            // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }elseif ($surat->keterangan == 'Miskin')
         {
             $pdf = PDF::loadView('cetakSurat.cetak_surat1-2', compact('surat'))->setPaper('f4', 'potrait');
             return $pdf->stream();
-            //return $pdf->download($surat->nama."-".".pdf");
+            // return $tes = $pdf->download($surat->nama."-".".pdf");
+            // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }elseif ($surat->keterangan == 'KP/KKN')
         {
             $pdf = PDF::loadView('cetakSurat.cetak_surat1-3', compact('surat'))->setPaper('f4', 'potrait');
             return $pdf->stream();
-            //return $pdf->download($surat->nama."-".".pdf");
+            // return $tes = $pdf->download($surat->nama."-".".pdf");
+            // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }else
         {
             $pdf = PDF::loadView('cetakSurat.cetak_surat2', compact('surat'))->setPaper('f4', 'potrait');
             return $pdf->stream();
-            //return $pdf->download($surat->nama."-".".pdf");
+            // return $tes = $pdf->download($surat->nama."-".".pdf");
+            // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }
 
         //return view('cetakSurat.cetak_surat2', compact('surat'));

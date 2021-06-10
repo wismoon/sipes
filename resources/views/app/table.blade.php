@@ -11,7 +11,6 @@
       <div class="card">
         <div class="card-body ">
           <div class="table-responsive">
-
             <table id="tbl" class="table table-bordered table-striped">
                 <thead>
                   <tr>
@@ -51,19 +50,20 @@
                             <td>{{ $row -> jenis_surat }}</td>
                             <td>{{ $row -> status }}</td>
                             <td>
-                                <form action="{{route('table.destroy', $row -> id)}}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
+
                                     <a href="#" class="btn btn-sm btn-warning editbtn"  data-form="{{ $row }}">
                                         <i class="fas fa-edit mr-1"></i>
                                     </a>
-                                    <button class="btn btn-sm btn-danger btn-delete">
+                                    <button class="btn btn-sm btn-danger btn-delete delete" surat_id="{{$row -> id}}" >
                                         <i class="fas fa-trash mr-1"></i>
                                     </button>
                                     <a href="{{('/data/'.$row -> file_syarat)}}" class="btn btn-primary btn-sm"  data-form="{{ $row }}">
                                         <i class="fas fa-file mr-1"></i>
                                     </a>
-                                </form>
+                                    <form id="form-delete-{{ $row->id }}" action="{{ route('table.destroy', ['table' => $row->id]) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                    </form>
                             </td>
                     @endforeach
                 </tbody>
@@ -137,6 +137,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
@@ -148,6 +149,22 @@
 
 @push('javascript')
     <script type="text/javascript">
+    $('.delete').click(function(){
+    var surat = $(this).attr('surat_id');
+    swal({
+        title: "Apakah Anda Yakin?",
+        text: "Mau Di Hapus Data Ini",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+        })
+        .then((willDelete) => {
+        if (willDelete) {
+        //   window.location = "table/" + surat;
+        $('#form-delete-'+surat).submit();
+        }
+    });
+    });
     $(function () {
 
         $('#tbl').DataTable({
@@ -176,3 +193,4 @@
     });
     </script>
 @endpush
+

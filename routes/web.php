@@ -27,7 +27,7 @@ Route::get('/arsip', 'TableSuratController@showArsip');
 Route::get('/cetak/{surat?}' , 'CetakController@index')->name('cetak');
 
 //Route::resource('surat', 'SuratController');
-Route::get('/surat', 'SuratController@index');
+Route::get('/surat', 'SuratController@index')->name('surat');
 
 //Route Surat
 Route::resource('/SuratKeterangan', 'SuratKeteranganController');

@@ -7,11 +7,12 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   <link rel="stylesheet" href="css/components.css">
-  {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="css/iziToast.min.css">
+  {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
   {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"> --}}
 
-  {{-- <link rel="stylesheet" href="css/style.css"> --}}
 
   @stack('stylesheet')
 </head>
@@ -30,6 +31,38 @@
 <script src="js/stisla.js"></script>
 <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{{asset('js/iziToast.min.js')}}" type="text/javascript"></script>
+<script>
+    @if(Session::has('sukses'))
+      // tampilkan toast sukses
+      iziToast.success({
+        title: 'Updated',
+        message: 'Berhasil Update Surat',
+      });
+    @endif
+    @if(Session::has('suksesDelete'))
+      // tampilkan toast sukses
+      iziToast.success({
+        title: 'Deleted',
+        message: 'Berhasil Delete Surat',
+      });
+    @endif
+    @if(Session::has('tambahSKUH'))
+      // tampilkan toast sukses
+      iziToast.success({
+        title: 'Surat Keterangan Usaha',
+        message: 'Telah Berhasil Di Ajukan',
+      });
+    @endif
+    @if(Session::has('tambahSKU'))
+      // tampilkan toast sukses
+      iziToast.success({
+        title: 'Surat Keterangan Umum',
+        message: 'Telah Berhasil Diajukan',
+      });
+    @endif
+</script>
 {{-- <script src="js/custom.js"></script> --}}
 {{-- <script src="js/scripts.js"></script> --}}
 

@@ -7,11 +7,20 @@
     <div class="section-header">
       <h1>Arsip</h1>
     </div>
+    @if (session()->has('success'))
+    <div class="alert alert-success alert-dismissible show fade">
+        <div class="alert-body">
+          <button class="close" data-dismiss="alert">
+            <span>&times;</span>
+          </button>
+          Edit Data Surat Berhasil.
+        </div>
+    </div>
+    @endif
     <div class="section-body">
       <div class="card">
         <div class="card-body ">
           <div class="table-responsive">
-
             <table id="tbl" class="table table-bordered table-striped">
                 <thead>
                   <tr>
