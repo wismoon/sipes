@@ -9,6 +9,7 @@
     <form action="{{route('surat.store')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
+            <div class="col-md-2"></div>
             <div class="col-md-4">
                 {{-- <x-input field="tanggal" label="Tanggal" type="date" aria-readonly="tanggal"/> --}}
                 {{-- <x-inputR field="nomorsurat" label="Nomor Surat" type="text" value="   /SK/TRB/III/2021"/> --}}

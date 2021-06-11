@@ -5,11 +5,12 @@
 
 <section class="section">
     <div class="section-header">
-      <h1>Daftar Surat Keterangan Usaha</h1>
+      <h1>Ajukan Surat Keterangan Usaha</h1>
     </div>
     <form action="{{route('surat.storeU')}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="row">
+        <div class="col-md-2"></div>
         <div class="col-md-4">
                 {{-- <x-input field="tanggal" label="Tanggal" type="date" aria-readonly="tanggal"/> --}}
                 {{-- <x-inputR field="nomorsurat" label="Nomor Surat" type="text" value="   /SK/TRB/III/2021"/> --}}

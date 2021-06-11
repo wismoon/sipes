@@ -261,6 +261,7 @@
                   <li> <i class="fa fa-check"></i> Fhoto Copy Kartu Tanda Penduduk ( KTP )</li>
                   <li> <i class="fa fa-check"></i> Surat Keterangan Domisili Dari RT/RW</li>
                   <li> <i class="fa fa-check"></i> Surat Pernyataan</li>
+                  <li> <i class="fa fa-check"></i> Semua Berkas Persyaratan Di Scan atau Photo Lalu Digabung Menjadi Satu Dalam Bentuk File PDF</li>
               </ol>
               <button><a href="{{route('surat.createSKU')}}">Ajukan Surat</a></button>
             </div>
@@ -274,6 +275,7 @@
                 <li> <i class="fa fa-check"></i> Surat Keterangan Domisili Dari RT/RW</li>
                 <li> <i class="fa fa-check"></i> Surat Keterangan Domisili Usaha Dari RT/RW Tempat Usaha</li>
                 <li> <i class="fa fa-check"></i> Photo Usaha</li>
+                <li> <i class="fa fa-check"></i> Semua Berkas Persyaratan Di Scan atau Photo Lalu Digabung Menjadi Satu Dalam Bentuk File PDF</li>
               </ol>
               <button><a href="{{route('surat.createSKUH')}}">Ajukan Surat</a></button>
             </div>

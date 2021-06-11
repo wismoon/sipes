@@ -89,57 +89,63 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="form-update" action="{{ route('table.update', $row->id) }}" method="POST" enctype="multipart/form-data">
+            <form id="form-update" action="{{ url('table/', $pemohon) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Nomor Surat</label>
+                                <input type="text" class="form-control" id="nomorsurat" name="nomorsurat">
+                            </div>
+                            <div class="form-group">
+                                <label>Nama</label>
+                                <input type="text" class="form-control" id="nama" name="nama" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Tempat Lahir</label>
+                                <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Tanggal Lahir</label>
+                                <input type="text" class="form-control" id="tanggallahir" name="tanggallahir" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <input type="text" class="form-control" id="jeniskelamin" name="jeniskelamin" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Agama</label>
+                                <input type="text" class="form-control" id="agama" name="agama" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
 
-                    <div class="form-group">
-                        <label>Nomor Surat</label>
-                        <input type="text" class="form-control" id="nomorsurat" name="nomorsurat">
-                    </div>
-                    <div class="form-group">
-                        <label>Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Tempat Lahir</label>
-                        <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Tanggal Lahir</label>
-                        <input type="text" class="form-control" id="tanggallahir" name="tanggallahir" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Jenis Kelamin</label>
-                        <input type="text" class="form-control" id="jeniskelamin" name="jeniskelamin" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Agama</label>
-                        <input type="text" class="form-control" id="agama" name="agama" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Pekerjaan</label>
-                        <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Alamat</label>
-                        <input type="text" class="form-control" id="alamat" name="alamat" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>No.Handphone</label>
-                        <input type="text" class="form-control" id="nohp" name="nohp" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Jenis Surat</label>
-                        <input type="text" class="form-control" id="jenis_surat" name="jenis_surat" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Status</label>
-                        <select type="select" class="form-control" id="status" name="status">
-                            <option value="diproses">Di proses</option>
-                            <option value="selesai">Selesai</option>
-                        </select>
+                            <div class="form-group">
+                                <label>Pekerjaan</label>
+                                <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Alamat</label>
+                                <input type="text" class="form-control" id="alamat" name="alamat" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>No.Handphone</label>
+                                <input type="text" class="form-control" id="nohp" name="nohp" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Surat</label>
+                                <input type="text" class="form-control" id="jenis_surat" name="jenis_surat" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select type="select" class="form-control" id="status" name="status">
+                                    <option value="diproses">Di proses</option>
+                                    <option value="selesai">Selesai</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
