@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Surat;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,11 @@ class HomeController extends Controller
 
     public function adminHome()
     {
-        return view('adminHome');
+        
+        $selesai = Surat::where('status', 'selesai')->count();
+        $diproses = Surat::where('status', 'diproses')->count();
+        return view('adminHome', compact('selesai', 'diproses'));
     }
+
+    
 }

@@ -27,8 +27,8 @@ class SuratKeteranganController extends Controller
             'pekerjaan' => 'required',
             'alamat' => 'required',
             'nohp' => 'required',
-            'jenis_surat' => 'required',
             'keterangan' => 'required',
+            'jenis_surat' => 'required',
             'file_syarat' => 'required:mimes:pdf',
 
         ]);
@@ -49,20 +49,16 @@ class SuratKeteranganController extends Controller
             'pekerjaan' => $request->pekerjaan,
             'alamat' => $request->alamat,
             'nohp' => $request->nohp,
-            'jenis_surat' => $request->jenis_surat,
             'keterangan' => $request->keterangan,
+            'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);
 
         //dd($request);
 
-        if (auth()->user()->is_admin != null)
-        {
-            return redirect('surat/daftarsurat')->with('tambahSKU', 'Surat Umum');
-        }else
-        {
-            return redirect()->route('homeland');
-        }
+
+        return redirect('surat/daftarsurat')->with('tambahSKU', 'Surat Umum');
+
     }
 
     // public function cetak(Request $request, Surat $surat)

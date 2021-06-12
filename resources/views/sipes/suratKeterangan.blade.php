@@ -9,7 +9,8 @@
     <form action="{{url('/SuratKeterangan')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
                 {{-- <x-input field="tanggal" label="Tanggal" type="date" aria-readonly="tanggal"/> --}}
                 {{-- <x-inputR field="nomorsurat" label="Nomor Surat" type="text" value="   /SK/TRB/III/2021"/> --}}
                 <input type="hidden" value="   /SK/TRB/III/2021" name="nomorsurat">
@@ -22,7 +23,7 @@
                 <x-input field="agama" label="Agama" type="text"/>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <x-input field="pekerjaan" label="Pekerjaan" type="text"/>
                 <x-input field="alamat" label="Alamat" type="text"/>
                 <x-input field="nohp" label="No.Handphone" type="text"/>

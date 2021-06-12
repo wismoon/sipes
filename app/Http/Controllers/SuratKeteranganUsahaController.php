@@ -27,6 +27,7 @@ class SuratKeteranganUsahaController extends Controller
             'nohp' => 'required',
             'namausaha' => 'required',
             'alamatusaha' => 'required',
+            'jenis_surat' => 'required',
             'file_syarat' => 'required:mimes:pdf',
 
         ]);
@@ -34,6 +35,7 @@ class SuratKeteranganUsahaController extends Controller
         //dd($request->file_syarat);
 
         $fileName = $request->file_syarat->getClientOriginalName().'-'.time().'.'.$request->file_syarat->extension();
+        $request->file_syarat->move(public_path('data'), $fileName);
 
         Surat::create([
             'tanggal' => date('Y-m-d H:i:s'),
@@ -48,18 +50,15 @@ class SuratKeteranganUsahaController extends Controller
             'nohp' => $request->nohp,
             'namausaha' => $request->namausaha,
             'alamatusaha' => $request->alamatusaha,
+            'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);
 
-        //dd($request);
+        // dd($request);
 
-        if (auth()->user() != null)
-        {
-            return redirect('surat/daftarsurat')->with('tambahSKUH', 'Surat Usaha');
-        }else
-        {
-            return redirect()->route('homeland');
-        }
+
+        return redirect('surat/daftarsurat')->with('tambahSKUH', 'Surat Usaha');
+
         //return view('app.daftarsurat');
     }
 

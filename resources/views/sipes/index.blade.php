@@ -60,7 +60,7 @@
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                   <!-- Brand -->
-                  {{-- <img src="{{asset('image/Logo Kab-Kampar.png')}}" alt="" title=""  width="50px"> --}}
+                  <img src="{{asset('image/Logo Kab-Kampar.png')}}" alt="" title="" style="float: left;margin-right: 12px" width="50px">
                     <a class="navbar-brand page-scroll sticky-logo" href="index.html">
                     <h1><span>S</span>IPES</h1>
                     </a>
@@ -97,9 +97,7 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="{{asset('image/STRUKTUR PERANGKAT DESA.jpg')}}" alt="" title="#slider-direction-1" />
-        <img src="{{asset('assets/eBusiness/img/slider/slider2.jpg')}}" alt="" title="#slider-direction-2" />
-        <img src="{{asset('assets/eBusiness/img/slider/slider3.jpg')}}" alt="" title="#slider-direction-3" />
+        <img src="{{asset('image/Kantor.jpg')}}" alt="" title="#slider-direction-1" />
       </div>
 
       <!-- direction 1 -->
@@ -115,56 +113,6 @@
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
                   <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best business Information </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
@@ -196,7 +144,7 @@
           <div class="well-left">
             <div class="single-well">
               <a href="#">
-								  <img src="{{asset('image/STRUKTUR PERANGKAT DESA.jpg')}}" alt="">
+								  <img src="{{asset('image/Kantor.jpg')}}" alt="">
 								</a>
             </div>
           </div>
@@ -206,26 +154,26 @@
           <div class="well-middle">
             <div class="single-well">
               <a href="#">
-                <h4 class="sec-head">project Maintenance</h4>
+                <h4 class="sec-head">Tahap Pengajuan Surat</h4>
               </a>
               <p>
-                Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
+                SIPES merupakan kepanjangan dari Sistem Pelayanan Pengajuan Surat, Tahapan pengajuan surat dari pemohon diperlukan untuk membaca persyaratan dan memahami bahwa pengajuan diperlukan berkas secara file pdf
               </p>
               <ul>
                 <li>
-                  <i class="fa fa-check"></i> Interior design Package
+                  <i class="fa fa-check"></i> Pemohon Masuk Kedalam Sistem
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Building House
+                  <i class="fa fa-check"></i> Pemohon Melihat keBagian Persyaratan
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Reparing of Residentail Roof
+                  <i class="fa fa-check"></i> Pemohon Mempersiapkan Syarat Pengajuan
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Renovaion of Commercial Office
+                  <i class="fa fa-check"></i> Pemohon Mengajukan Surat Ke Sistem
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Make Quality Products
+                  <i class="fa fa-check"></i> Pemohon Menunggu Pemberitahuan Dari Kaur Tata Usaha Bahwa Surat Selesai
                 </li>
               </ul>
             </div>
@@ -254,7 +202,7 @@
           <!-- Start Left services -->
           <div class="col-md-2"></div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pri_table_list active">
+            <div class="pri_table_list active" style="height: 550px">
               <h3>Surat Keterangan Umum <br/></h3>
               <ol>
                   <li> <i class="fa fa-check"></i> Fhoto Copy Kartu Keluarga ( KK )</li>
@@ -263,11 +211,11 @@
                   <li> <i class="fa fa-check"></i> Surat Pernyataan</li>
                   <li> <i class="fa fa-check"></i> Semua Berkas Persyaratan Di Scan atau Photo Lalu Digabung Menjadi Satu Dalam Bentuk File PDF</li>
               </ol>
-              <button><a href="{{route('surat.createSKU')}}">Ajukan Surat</a></button>
+              <button style="margin-top: 70px"><a href="{{route('surat.createSKU')}}">Ajukan Surat</a></button>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pri_table_list active">
+            <div class="pri_table_list active" style="height: 550px">
               <h3>Surat Keterangan Usaha <br/></h3>
               <ol>
                 <li> <i class="fa fa-check"></i> Fhoto Copy Kartu Keluarga ( KK )</li>

@@ -23,7 +23,7 @@ class CetakController extends Controller
             // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }elseif ($surat->keterangan == 'Penghasilan')
         {
-            $pdf = PDF::loadView('cetakSurat.cetak_surat1-1', compact('surat'))->setPaper('f4', 'potrait');
+            $pdf = PDF::loadView('cetakSurat.cetak_surat1-1', compact('surat'))->setPaper(array(0, 0, 450.28, 730.89), 'potrait');
             return $pdf->stream();
             // return $tes = $pdf->download($surat->nama."-".".pdf");
             // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
@@ -41,7 +41,7 @@ class CetakController extends Controller
             // Storage::put('public/surat_selesai/'.$surat->nama, $tes);
         }else
         {
-            $pdf = PDF::loadView('cetakSurat.cetak_surat2', compact('surat'))->setPaper('f4', 'potrait');
+            $pdf = PDF::loadView('cetakSurat.cetak_surat2', compact('surat'))->setPaper(array(0, 0, 450.28, 730.89), 'potrait');
             return $pdf->stream();
             // return $tes = $pdf->download($surat->nama."-".".pdf");
             // Storage::put('public/surat_selesai/'.$surat->nama, $tes);

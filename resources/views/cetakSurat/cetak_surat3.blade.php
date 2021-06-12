@@ -2,7 +2,6 @@
 <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
 <style type="text/css">
 <!--
-@page {margin: 0px;}
 span.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
 div.cls_002{font-family:Arial,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
 span.cls_003{font-family:Times,serif;font-size:22.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
@@ -51,8 +50,8 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:229.49px;top:422.21px" class="cls_011"><span class="cls_011">: Wiraswasta</span></div>
 <div style="position:absolute;left:87.62px;top:444.65px" class="cls_011"><span class="cls_011">Alamat</span></div>
 <div style="position:absolute;left:229.49px;top:444.65px" class="cls_011"><span class="cls_011">: Suka Maju Tapung hilir Kampar</span></div>
-<div style="position:absolute;left:87.74px;top:511.85px;" class="cls_011"><span class="cls_011">Nama tersebut diatas saat ini </span><span class="cls_012">Memiliki Usaha {{$surat->namausaha}}</span><span class="cls_011"> yang terletak di </span></div>
-<div style="position:absolute;left:59.28px;top:534.31px;" class="cls_011"><span class="cls_011" style="text-transform: uppercase; text-align: justify">{{$surat->alamatusaha}} Tarab Mulia Desa Tarai Bangun Kecamatan</span></div>
+<div style="position:absolute;left:87.74px;top:511.95px" class="cls_011"><span class="cls_011">Nama tersebut diatas saat ini </span><span class="cls_012">Memiliki Usaha {{$surat->namausaha}}</span><span class="cls_011"> yang terletak di </span></div>
+<div style="position:absolute;left:59.28px;top:534.31px" class="cls_011"><span class="cls_011" style="text-transform: uppercase">{{$surat->alamatusaha}} Tarab Mulia Desa Tarai Bangun Kecamatan</span></div>
 <div style="position:absolute;left:59.28px;top:556.75px" class="cls_011"><span class="cls_011">Tambang Kabupaten Kamper dan surat ini diberikan guna Persyaratan Pengurusan Pengajuan</span></div>
 <div style="position:absolute;left:59.28px;top:579.19px" class="cls_011"><span class="cls_011">Tambahan Modal Usaha</span></div>
 <div style="position:absolute;left:87.74px;top:623.71px" class="cls_009"><span class="cls_009">Demikian  surat  keterangan  ini  kami  buat  dengan  sebenarnya  untuk  dapat</span></div>
@@ -60,10 +59,7 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:319.01px;top:710.11px" class="cls_007"><span class="cls_007">Dikeluarkan di</span></div>
 <div style="position:absolute;left:442.03px;top:710.11px" class="cls_007"><span class="cls_007">: Tarai Bangun</span></div>
 <div style="position:absolute;left:319.01px;top:730.90px" class="cls_007"><span class="cls_007">Pada Tanggal</span></div>
-<div style="position:absolute;left:442.03px;top:730.90px" class="cls_007"><span class="cls_007">: <?php
-                                $date = new DateTime($surat->tanggal);
-                                echo $date->format('d F Y')
-                                ?></span></div>
+<div style="position:absolute;left:442.03px;top:730.90px" class="cls_007"><span class="cls_007">: 2  Juni 2021</span></div>
 <div style="position:absolute;left:319.01px;top:751.54px" class="cls_007"><span class="cls_007">KEPALA DESA TARAI BANGUN</span></div>
 <div style="position:absolute;left:346.03px;top:837.70px" class="cls_015"><span class="cls_015">ANDRA MAISTAR, S.SOS</span></div>
 </div>

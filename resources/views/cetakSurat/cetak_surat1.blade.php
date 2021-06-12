@@ -52,7 +52,7 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:87.62px;top:444.65px" class="cls_011"><span class="cls_011">Alamat</span></div>
 <div style="position:absolute;left:229.49px;top:444.65px" class="cls_011"><span class="cls_011">: {{$surat->alamat}}</span></div>
 <div style="position:absolute;left:87.74px;top:511.85px" class="cls_011"><span class="cls_011">Nama tersebut diatas saat ini</div>
-<div style="position:absolute;left:87.74px;top:623.71px" class="cls_009"><span class="cls_009">Demikian  surat  keterangan  ini  kami  buat  dengan  sebenarnya  untuk  dapat</span></div>
+<div style="position:absolute;left:87.74px;top:623.71px;text-align: justify" class="cls_009"><span class="cls_009">Demikian  surat  keterangan  ini  kami  buat  dengan  sebenarnya  untuk  dapat</span></div>
 <div style="position:absolute;left:59.28px;top:647.95px" class="cls_009"><span class="cls_009">dipergunakan sebagaimana perlunya.</span></div>
 <div style="position:absolute;left:319.01px;top:710.11px" class="cls_007"><span class="cls_007">Dikeluarkan di</span></div>
 <div style="position:absolute;left:442.03px;top:710.11px" class="cls_007"><span class="cls_007">: Tarai Bangun</span></div>
