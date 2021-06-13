@@ -61,7 +61,7 @@
     overflow: hidden; }
     .article .article-header .article-image {
       background-color: #fbfbfb;
-      background-position: center;
+      background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
