@@ -53,7 +53,12 @@
                             <td>{{ $row -> nomorsurat }}</td>
                             <td>{{ $row -> nama }}</td>
                             <td>{{ $row -> tempatlahir }}</td>
-                            <td>{{ $row -> tanggallahir }}</td>
+                            <td>
+                                <?php
+                                $date = new DateTime($row->tanggallahir);
+                                echo $date->format('d-m-Y')
+                                ?>
+                            </td>
                             <td>{{ $row -> jeniskelamin }}</td>
                             <td>{{ $row -> agama }}</td>
                             <td>{{ $row -> pekerjaan }}</td>

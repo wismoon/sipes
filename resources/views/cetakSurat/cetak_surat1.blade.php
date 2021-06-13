@@ -33,7 +33,7 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:226.13px;top:52.32px" class="cls_002"><span class="cls_002">KECAMATAN TAMBANG</span></div>
 <div style="position:absolute;left:138.62px;top:77.52px" class="cls_003"><span class="cls_003">KANTOR KEPALA DESA TARAI BANGUN</span></div>
 <div style="position:absolute;left:198.65px;top:103.58px" class="cls_004"><span class="cls_004">Alamat: Jl. Kubang Raya - Tarai Bangun Kabupaten Kampar</span></div>
-<div style="position:absolute;left:213.13px;top:140.70px" class="cls_014"><span class="cls_014">SURAT KETERANGAN USAHA</span></div>
+<div style="position:absolute;left:213.13px;top:140.70px" class="cls_014"><span class="cls_014">SURAT KETERANGAN UMUM</span></div>
 <div style="position:absolute;left:228.93px;top:160.62px" class="cls_009"><span class="cls_009">Nomor : {{$surat->nomorsurat}}</span></div>
 <div class="ml-3 mr-3" style="position:absolute;left:79.28px;top:226.58px;text-align: justify; max-width:430px;">
 <p style="font-size: 14px">

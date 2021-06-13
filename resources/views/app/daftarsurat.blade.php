@@ -11,7 +11,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <article class="article">
             <div class="article-header">
-              <div class="article-image" data-background="{{asset('image/lol.PNG')}}">
+              <div class="article-image" data-background="{{asset('image/Surat Umum.jpg')}}">
               </div>
               <div class="article-title">
                 <h2><a href="#">Surat Keterangan Umum</a></h2>
@@ -28,7 +28,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <article class="article">
               <div class="article-header">
-                <div class="article-image" data-background="{{asset('image/lol.PNG')}}">
+                <div class="article-image" data-background="{{asset('image/Surat Usaha.jpg')}}">
                 </div>
                 <div class="article-title">
                   <h2><a href="#">Surat Keterangan Usaha</a></h2>

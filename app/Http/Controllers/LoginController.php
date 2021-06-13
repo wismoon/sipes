@@ -39,8 +39,8 @@ class LoginController extends Controller
                 return redirect()->route('admin');
             }
         }else{
-            //return redirect()->route('login')->with('error', 'Email-Address And Password are wrong');
-            echo('gagal login');
+            return redirect()->route('login')->with('error', 'Email-Address And Password are wrong');
+            // echo('gagal login');
         }
     }
 

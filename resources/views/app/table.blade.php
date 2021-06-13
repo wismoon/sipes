@@ -43,7 +43,12 @@
                             <td>{{ $row -> nomorsurat }}</td>
                             <td>{{ $row -> nama }}</td>
                             <td>{{ $row -> tempatlahir }}</td>
-                            <td>{{ $row -> tanggallahir }}</td>
+                            <td>
+                            <?php
+                                $date = new DateTime($row->tanggallahir);
+                                echo $date->format('d-m-Y')
+                                ?>
+                            </td>
                             <td>{{ $row -> jeniskelamin }}</td>
                             <td>{{ $row -> agama }}</td>
                             <td>{{ $row -> pekerjaan }}</td>
@@ -134,21 +139,14 @@
                                 <label>No.Handphone</label>
                                 <input type="text" class="form-control" id="nohp" name="nohp" readonly>
                             </div>
-                            @if ($row -> jenis_surat != 'surat keterangan usaha')
-
-                                                        <div class="form-group">
-                                                            <label>Nama Usaha</label>
-                                                            <input type="text" class="form-control" id="namausaha" name="namausaha" readonly>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Alamat Usaha</label>
-                                                            <input type="text" class="form-control" id="alamatusaha" name="alamatusaha" readonly>
-                                                        </div>
-                            @else
-                            {{''}}
-
-
-                               @endif
+                            <div class="form-group">
+                                <label>Nama Usaha</label>
+                                <input type="text" class="form-control" id="namausaha" name="namausaha" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Alamat Usaha</label>
+                                <input type="text" class="form-control" id="alamatusaha" name="alamatusaha" readonly>
+                            </div>
                             <div class="form-group">
                                 <label>Jenis Surat</label>
                                 <input type="text" class="form-control" id="jenis_surat" name="jenis_surat" readonly>
