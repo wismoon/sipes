@@ -108,16 +108,17 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
+                  <h2 class="title1">SELAMAT DATANG </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
+                  <h1 class="title2">Kantor Desa Tarai Bangun Kecamatan Tambang Kabupaten Kampar</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                    <h2 class="title3" style="color: white">Sistem Pelayanan Pengajuan Surat Keterangan Desa</h2>
+                  {{-- <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a> --}}
                 </div>
               </div>
             </div>
@@ -156,7 +157,7 @@
               <a href="#">
                 <h4 class="sec-head">Tahap Pengajuan Surat</h4>
               </a>
-              <p>
+              <p style="text-align: justify">
                 SIPES merupakan kepanjangan dari Sistem Pelayanan Pengajuan Surat, Tahapan pengajuan surat dari pemohon diperlukan untuk membaca persyaratan dan memahami bahwa pengajuan diperlukan berkas secara file pdf
               </p>
               <ul>

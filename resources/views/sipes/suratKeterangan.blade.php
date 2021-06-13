@@ -21,7 +21,7 @@
                 {{-- <x-input field="jeniskelamin" label="Jenis Kelamin" type="text"/> --}}
                 <x-inputSelect field="jeniskelamin" label="Jenis Kealmin" type="select"/>
                 <x-input field="agama" label="Agama" type="text"/>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Buat Surat</button>
             </div>
             <div class="col-md-4">
                 <x-input field="pekerjaan" label="Pekerjaan" type="text"/>

@@ -59,7 +59,7 @@
                                     <button class="btn btn-sm btn-danger btn-delete delete" surat_id="{{$row -> id}}" >
                                         <i class="fas fa-trash mr-1"></i>
                                     </button>
-                                    <a href="{{('/data/'.$row -> file_syarat)}}" class="btn btn-primary btn-sm"  data-form="{{ $row }}">
+                                    <a target="_blank" href="{{('/data/'.$row -> file_syarat)}}" class="btn btn-primary btn-sm"  data-form="{{ $row }}">
                                         <i class="fas fa-file mr-1"></i>
                                     </a>
                                     <form id="form-delete-{{ $row->id }}" action="{{ route('table.destroy', ['table' => $row->id]) }}" method="POST">
@@ -134,6 +134,21 @@
                                 <label>No.Handphone</label>
                                 <input type="text" class="form-control" id="nohp" name="nohp" readonly>
                             </div>
+                            @if ($row -> jenis_surat != 'surat keterangan usaha')
+
+                                                        <div class="form-group">
+                                                            <label>Nama Usaha</label>
+                                                            <input type="text" class="form-control" id="namausaha" name="namausaha" readonly>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Alamat Usaha</label>
+                                                            <input type="text" class="form-control" id="alamatusaha" name="alamatusaha" readonly>
+                                                        </div>
+                            @else
+                            {{''}}
+
+
+                               @endif
                             <div class="form-group">
                                 <label>Jenis Surat</label>
                                 <input type="text" class="form-control" id="jenis_surat" name="jenis_surat" readonly>
@@ -199,11 +214,15 @@
         $('#pekerjaan').val(form.pekerjaan);
         $('#alamat').val(form.alamat);
         $('#nohp').val(form.nohp);
+        $('#namausaha').val(form.namausaha);
+        $('#alamatusaha').val(form.alamatusaha);
         $('#jenis_surat').val(form.jenis_surat);
         $('#status').val(form.status);
         $('#form-update').attr('action', '/table/' + form.id)
-    })
+
     });
+    })
+
     </script>
 @endpush
 

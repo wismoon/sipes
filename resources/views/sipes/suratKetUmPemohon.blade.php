@@ -4,7 +4,7 @@
 <body class="layout-2">
 <section class="section">
     <div class="section-header">
-      <h1>Ajukan Surat Keterangan</h1>
+      <h1>Ajukan Surat Keterangan Umum</h1>
     </div>
     <form action="{{route('surat.store')}}" method="post" enctype="multipart/form-data">
         @csrf
@@ -21,7 +21,7 @@
                 {{-- <x-input field="jeniskelamin" label="Jenis Kelamin" type="text"/> --}}
                 <x-inputSelect field="jeniskelamin" label="Jenis Kealmin" type="select"/>
                 <x-input field="agama" label="Agama" type="text"/>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Ajukan Surat</button>
             </div>
             <div class="col-md-4">
                 <x-input field="pekerjaan" label="Pekerjaan" type="text"/>

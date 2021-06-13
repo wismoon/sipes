@@ -2,7 +2,6 @@
 
 @section('content')
 <body class="layout-2">
-
 <section class="section">
     <div class="section-header">
       <h1>Ajukan Surat Keterangan Usaha</h1>
@@ -21,10 +20,10 @@
                 <x-input field="tanggallahir" label="Tanggal Lahir" type="date"/>
                 <x-inputSelect field="jeniskelamin" label="Jenis Kealmin" type="select"/>
                 <x-input field="agama" label="Agama" type="text"/>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <x-input field="pekerjaan" label="Pekerjaan" type="text"/>
+                <button type="submit" class="btn btn-primary">Ajukan Surat</button>
         </div>
         <div class="col-md-4">
-                <x-input field="pekerjaan" label="Pekerjaan" type="text"/>
                 <x-input field="alamat" label="Alamat" type="text"/>
                 <x-input field="nohp" label="No.Handphone" type="text"/>
                 <x-input field="namausaha" label="Nama Usaha" type="text"/>

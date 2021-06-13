@@ -50,12 +50,21 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:229.49px;top:422.21px" class="cls_011"><span class="cls_011">: Wiraswasta</span></div>
 <div style="position:absolute;left:87.62px;top:444.65px" class="cls_011"><span class="cls_011">Alamat</span></div>
 <div style="position:absolute;left:229.49px;top:444.65px" class="cls_011"><span class="cls_011">: Suka Maju Tapung hilir Kampar</span></div>
-<div style="position:absolute;left:87.74px;top:511.95px" class="cls_011"><span class="cls_011">Nama tersebut diatas saat ini </span><span class="cls_012">Memiliki Usaha {{$surat->namausaha}}</span><span class="cls_011"> yang terletak di </span></div>
+/* <div style="position:absolute;left:87.74px;top:511.95px" class="cls_011"><span class="cls_011">Nama tersebut diatas saat ini </span><span class="cls_012">Memiliki Usaha {{$surat->namausaha}}</span><span class="cls_011"> yang terletak di </span></div>
 <div style="position:absolute;left:59.28px;top:534.31px" class="cls_011"><span class="cls_011" style="text-transform: uppercase">{{$surat->alamatusaha}} Tarab Mulia Desa Tarai Bangun Kecamatan</span></div>
 <div style="position:absolute;left:59.28px;top:556.75px" class="cls_011"><span class="cls_011">Tambang Kabupaten Kamper dan surat ini diberikan guna Persyaratan Pengurusan Pengajuan</span></div>
 <div style="position:absolute;left:59.28px;top:579.19px" class="cls_011"><span class="cls_011">Tambahan Modal Usaha</span></div>
 <div style="position:absolute;left:87.74px;top:623.71px" class="cls_009"><span class="cls_009">Demikian  surat  keterangan  ini  kami  buat  dengan  sebenarnya  untuk  dapat</span></div>
-<div style="position:absolute;left:59.28px;top:647.95px" class="cls_009"><span class="cls_009">dipergunakan sebagaimana perlunya.</span></div>
+<div style="position:absolute;left:59.28px;top:647.95px" class="cls_009"><span class="cls_009">dipergunakan sebagaimana perlunya.</span></div> */
+<div class="ml-3 mr-3">
+<p >
+    Nama tersebut diatas saat ini Memiliki Usaha Kedai Harian yang terletak di Perum. Griya
+Setia Nusa 3 Blok.D1 No.3 RT.01 RW.02 Dusun IV Tarab Mulia Desa Tarai Bangun Kecamatan
+Tambang Kabupaten Kamper dan surat ini diberikan guna Persyaratan Pengurusan Pengajuan
+Tambahan Modal Usaha
+
+</p>
+</div>
 <div style="position:absolute;left:319.01px;top:710.11px" class="cls_007"><span class="cls_007">Dikeluarkan di</span></div>
 <div style="position:absolute;left:442.03px;top:710.11px" class="cls_007"><span class="cls_007">: Tarai Bangun</span></div>
 <div style="position:absolute;left:319.01px;top:730.90px" class="cls_007"><span class="cls_007">Pada Tanggal</span></div>
