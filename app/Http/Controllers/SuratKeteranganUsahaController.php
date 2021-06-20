@@ -27,8 +27,9 @@ class SuratKeteranganUsahaController extends Controller
             'nohp' => 'required',
             'namausaha' => 'required',
             'alamatusaha' => 'required',
+            'keterangan' => 'required',
             'jenis_surat' => 'required',
-            'file_syarat' => 'required:mimes:pdf',
+            'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
         ]);
 
@@ -50,6 +51,7 @@ class SuratKeteranganUsahaController extends Controller
             'nohp' => $request->nohp,
             'namausaha' => $request->namausaha,
             'alamatusaha' => $request->alamatusaha,
+            'keterangan' => $request->keterangan,
             'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);

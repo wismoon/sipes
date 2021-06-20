@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>Login &mdash; {{ config('app.name') }}</title>
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+  <link href="{{asset('image/Logo Kab-Kampar.png')}}" rel="icon">
 </head>
 
 <body>
@@ -38,5 +39,18 @@
   <script src="{{ mix('js/manifest.js') }}"></script>
   <script src="{{ mix('js/vendor.js') }}"></script>
   <script src="{{ mix('js/app.js') }}"></script>
+  <script src="{{asset('js/iziToast.min.js')}}" type="text/javascript"></script>
+  <link rel="stylesheet" href="{{asset('css/iziToast.min.css')}}">
+  <script>
+    @if(Session::has('error'))
+      // tampilkan toast sukses
+      iziToast.error({
+        position: 'topCenter',
+        title: 'Login Gagal',
+        message: 'Masukkan email dan password yang benar',
+      });
+    @endif
+</script>
 </body>
+
 </html>

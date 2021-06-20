@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ArsipExport;
 use App\Models\Surat;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class TableSuratController extends Controller
 {
@@ -28,6 +30,12 @@ class TableSuratController extends Controller
         $pemohon = Surat::where('status', 'selesai')->get();
 
         return view('app.tableArsip', compact('pemohon'));
+
+    }
+
+    public function export_excel()
+    {
+        return Excel::download(new ArsipExport, 'Arsip.xlsx');
     }
 
     public function update(Request $request, $id)

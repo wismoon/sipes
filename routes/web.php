@@ -23,6 +23,7 @@ Route::get('/admin', 'HomeController@adminHome')->name('admin');
 //Route Table
 Route::resource('/table', 'TableSuratController');
 Route::get('/arsip', 'TableSuratController@showArsip');
+Route::get('/export_excel', 'TableSuratController@export_excel')->name('excel');
 
 Route::get('/cetak/{surat?}' , 'CetakController@index')->name('cetak');
 
@@ -31,8 +32,8 @@ Route::prefix('surat')->name('surat.')->group(function(){
     Route::get('daftarsurat', 'SuratController@index')->name('index');
     Route::get('pemohon', 'SuratController@createPemohon')->name('createSKU');
     Route::get('pemohonU', 'SuratController@createPemohonU')->name('createSKUH');
-    Route::post('store', 'SuratController@storePemohonU')->name('storeU');
-    Route::post('storeU', 'SuratController@storePemohon')->name('store');
+    Route::post('store', 'SuratController@storePemohon')->name('store');
+    Route::post('storeU', 'SuratController@storePemohonU')->name('storeU');
 });
 
 // Route::resource('pemohon', );

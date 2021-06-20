@@ -7,6 +7,9 @@
     <div class="section-header">
       <h1>Arsip</h1>
     </div>
+    <div class="btn mb-2">
+        <button id="btn-cetak" onclick="excel()" class="btn btn-success">Tombol</button>
+    </div>
     @if (session()->has('success'))
     <div class="alert alert-success alert-dismissible show fade">
         <div class="alert-body">
@@ -64,8 +67,14 @@
                             <td>{{ $row -> pekerjaan }}</td>
                             <td>{{ $row -> alamat }}</td>
                             <td>{{ $row -> nohp }}</td>
-                            <td>{{ $row -> jenis_surat }}</td>
-                            <td>{{ $row -> status }}</td>
+                            <td>{{ $row -> keterangan }}</td>
+                            <td>
+                                @if ($row -> status == 'selesai')
+                                    <div class="badge badge-success">{{ $row -> status }}</div>
+                                @else
+                                    <div class="badge badge-warning">{{ $row -> status }}</div>
+                                @endif
+                            </td>
                             <td>
                                 <form>
                                     @csrf
@@ -171,11 +180,25 @@
     <script type="text/javascript">
     $(function () {
 
-        $('#tbl').DataTable({
+        var table = $('#tbl').DataTable({
             "columnDefs": [
                 { "sortable": false, "targets": [2,3] }
+            ],
+            "dom": 'Bflrtip',
+
+            "buttons": [
+                {
+                    extend: 'excel',
+                    title: 'arsip'+'_'+new Date().toJSON().slice(0,10).split('-').reverse().join('-'),
+                }
             ]
         });
+
+        $('.buttons-excel').hide();
+        $('#btn-cetak').click(function(){
+            $('.buttons-excel').click();
+        });
+        table.buttons().container().appendTo('#tbl_wrapper .col-md-6:eq(0)');
 
         $('.editbtn').click(function () {
         $('#modal-md').modal('show');

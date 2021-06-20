@@ -29,11 +29,12 @@ class SuratKeteranganController extends Controller
             'nohp' => 'required',
             'keterangan' => 'required',
             'jenis_surat' => 'required',
-            'file_syarat' => 'required:mimes:pdf',
+            'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
         ]);
 
         //dd($request->file_syarat);
+
 
         $fileName = $request->file_syarat->getClientOriginalName().'-'.time().'.'.$request->file_syarat->extension();
         $request->file_syarat->move(public_path('data'), $fileName);

@@ -5,10 +5,10 @@
     @isset ($value) value="{{old("$field") ? old("$field") : $value}}"
     @else value="{{old($field)}}"
     @endisset>
-        <option>-- Pilih Jenis Surat --</option>
-        <option value="Penghasilan">Penghasilan</option>
-        <option value="Miskin">Miskin</option>
-        <option value="KP/KKN">KP/KKN</option>
+        <option value="">-- Pilih Jenis Surat --</option>
+        <option value="sk.penghasilan">Penghasilan</option>
+        <option value="sk.miskin">Miskin</option>
+        <option value="sk.kp/kkn">KP/KKN</option>
     </select>
 
     @error($field)

@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c332677-8f10-4c21-b320-393913a27f9d" name="Default Changelist" comment="" />
+    <list default="true" id="4c332677-8f10-4c21-b320-393913a27f9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="uml://PHP/D:/WORKBENCE/laragon/www/SIPES/app/Http/Controllers">
           <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -24,52 +26,55 @@
               <ID>PHP</ID>
               <OriginalElement>$PROJECT_DIR$/app/Http/Controllers</OriginalElement>
               <nodes>
-                <node x="341.0" y="276.0">\App\Http\Controllers\SuratKeteranganController</node>
-                <node x="863.0" y="320.0">\App\Http\Controllers\CetakController</node>
-                <node x="710.0" y="275.0">\App\Http\Controllers\LoginController</node>
-                <node x="1037.0" y="309.0">\App\Http\Controllers\SuratKeteranganUsahaController</node>
-                <node x="564.0" y="297.5">\App\Http\Controllers\HomeController</node>
-                <node x="515.0" y="0.0">\Illuminate\Routing\Controller</node>
-                <node x="578.0" y="188.0">\App\Http\Controllers\Controller</node>
-                <node x="188.0" y="298.0">\App\Http\Controllers\SuratController</node>
-                <node x="0.0" y="459.0">$PROJECT_DIR$/app/Http/Controllers/Auth</node>
-                <node x="0.0" y="276.0">\App\Http\Controllers\TableSuratController</node>
+                <node x="919.0" y="647.0">\App\Http\Controllers\SuratKeteranganController</node>
+                <node x="1356.8413461538462" y="646.0">\App\Http\Controllers\LoginController</node>
+                <node x="146.0" y="691.0">\App\Http\Controllers\CetakController</node>
+                <node x="478.0" y="680.0">\App\Http\Controllers\SuratKeteranganUsahaController</node>
+                <node x="0.0" y="679.5">\App\Http\Controllers\HomeController</node>
+                <node x="596.8498573466476" y="205.17902995720397">\Illuminate\Routing\Controller</node>
+                <node x="658.2499999999999" y="407.0">\App\Http\Controllers\Controller</node>
+                <node x="736.0" y="636.0">\App\Http\Controllers\SuratController</node>
+                <node x="304.0" y="680.0">\App\Http\Controllers\RegisterController</node>
+                <node x="0.0" y="840.0">$PROJECT_DIR$/app/Http/Controllers/Auth</node>
+                <node x="1142.0" y="647.0">\App\Http\Controllers\TableSuratController</node>
               </nodes>
               <notes />
               <edges>
                 <edge source="\App\Http\Controllers\SuratKeteranganUsahaController" target="\App\Http\Controllers\Controller">
-                  <point x="0.0" y="-35.5" />
-                  <point x="1156.0" y="235.0" />
-                  <point x="669.0" y="235.0" />
-                  <point x="42.0" y="13.5" />
+                  <point x="-1.1368683772161603E-13" y="-35.5" />
+                  <point x="596.9999999999999" y="616.0" />
+                  <point x="701.1249999999999" y="616.0" />
+                  <point x="-6.125" y="13.5" />
                 </edge>
                 <edge source="\App\Http\Controllers\SuratController" target="\App\Http\Controllers\Controller">
-                  <point x="0.0" y="-46.5" />
-                  <point x="254.5" y="245.0" />
-                  <point x="599.0" y="245.0" />
-                  <point x="-28.0" y="13.5" />
+                  <point x="0.0" y="-79.5" />
+                  <point x="817.5" y="616.0" />
+                  <point x="713.3749999999999" y="616.0" />
+                  <point x="6.125" y="13.5" />
                 </edge>
                 <edge source="\App\Http\Controllers\SuratKeteranganController" target="\App\Http\Controllers\Controller">
                   <point x="0.0" y="-68.5" />
-                  <point x="442.5" y="255.0" />
-                  <point x="613.0" y="255.0" />
-                  <point x="-14.0" y="13.5" />
+                  <point x="1020.5" y="606.0" />
+                  <point x="725.6249999999999" y="606.0" />
+                  <point x="18.375" y="13.5" />
                 </edge>
                 <edge source="\App\Http\Controllers\TableSuratController" target="\App\Http\Controllers\Controller">
                   <point x="0.0" y="-68.5" />
-                  <point x="84.0" y="235.0" />
-                  <point x="585.0" y="235.0" />
-                  <point x="-42.0" y="13.5" />
+                  <point x="1226.0" y="596.0" />
+                  <point x="737.8749999999999" y="596.0" />
+                  <point x="30.625" y="13.5" />
                 </edge>
                 <edge source="\App\Http\Controllers\HomeController" target="\App\Http\Controllers\Controller">
-                  <point x="0.0" y="-47.0" />
-                  <point x="0.0" y="13.5" />
+                  <point x="0.0" y="-36.0" />
+                  <point x="63.0" y="586.0" />
+                  <point x="664.3749999999999" y="586.0" />
+                  <point x="-42.875" y="13.5" />
                 </edge>
                 <edge source="\App\Http\Controllers\LoginController" target="\App\Http\Controllers\Controller">
-                  <point x="0.0" y="-69.5" />
-                  <point x="776.5" y="255.0" />
-                  <point x="641.0" y="255.0" />
-                  <point x="14.0" y="13.5" />
+                  <point x="-33.25" y="-69.5" />
+                  <point x="1390.0913461538462" y="586.0" />
+                  <point x="750.1249999999999" y="586.0" />
+                  <point x="42.875" y="13.5" />
                 </edge>
                 <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Routing\Controller">
                   <point x="0.0" y="-13.5" />
@@ -77,18 +82,24 @@
                 </edge>
                 <edge source="\App\Http\Controllers\CetakController" target="\App\Http\Controllers\Controller">
                   <point x="0.0" y="-24.5" />
-                  <point x="940.0" y="245.0" />
-                  <point x="655.0" y="245.0" />
-                  <point x="28.0" y="13.5" />
+                  <point x="215.0" y="596.0" />
+                  <point x="676.6249999999999" y="596.0" />
+                  <point x="-30.625" y="13.5" />
+                </edge>
+                <edge source="\App\Http\Controllers\RegisterController" target="\App\Http\Controllers\Controller">
+                  <point x="0.0" y="-35.5" />
+                  <point x="381.0" y="606.0" />
+                  <point x="688.8749999999999" y="606.0" />
+                  <point x="-18.375" y="13.5" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="683.5" y="239.5" />
+              <settings layout="Hierarchic Group" zoom="0.9092088197146563" x="761.0" y="404.8880171184023" />
               <SelectedNodes />
               <Categories>
-                <Category>Fields</Category>
-                <Category>Constants</Category>
-                <Category>Constructors</Category>
                 <Category>Methods</Category>
+                <Category>Constructors</Category>
+                <Category>Constants</Category>
+                <Category>Fields</Category>
               </Categories>
               <VISIBILITY>private</VISIBILITY>
             </state>
@@ -255,11 +266,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -296,27 +308,23 @@
       <option name="presentableId" value="Default" />
       <updated>1623069752007</updated>
       <workItem from="1623069756853" duration="1570000" />
+      <workItem from="1623613503640" duration="777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1570000" />
+    <option name="totallyTimeSpent" value="2347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -324,15 +332,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,9 +366,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="292.5" y="52.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="293.0" y="52.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
@@ -366,52 +380,55 @@
           <ID>PHP</ID>
           <OriginalElement>$PROJECT_DIR$/app/Http/Controllers</OriginalElement>
           <nodes>
-            <node x="341.0" y="276.0">\App\Http\Controllers\SuratKeteranganController</node>
-            <node x="863.0" y="320.0">\App\Http\Controllers\CetakController</node>
-            <node x="710.0" y="275.0">\App\Http\Controllers\LoginController</node>
-            <node x="1037.0" y="309.0">\App\Http\Controllers\SuratKeteranganUsahaController</node>
-            <node x="564.0" y="297.5">\App\Http\Controllers\HomeController</node>
-            <node x="515.0" y="0.0">\Illuminate\Routing\Controller</node>
-            <node x="578.0" y="188.0">\App\Http\Controllers\Controller</node>
-            <node x="188.0" y="298.0">\App\Http\Controllers\SuratController</node>
-            <node x="0.0" y="459.0">$PROJECT_DIR$/app/Http/Controllers/Auth</node>
-            <node x="0.0" y="276.0">\App\Http\Controllers\TableSuratController</node>
+            <node x="919.0" y="647.0">\App\Http\Controllers\SuratKeteranganController</node>
+            <node x="1356.8413461538462" y="646.0">\App\Http\Controllers\LoginController</node>
+            <node x="146.0" y="691.0">\App\Http\Controllers\CetakController</node>
+            <node x="478.0" y="680.0">\App\Http\Controllers\SuratKeteranganUsahaController</node>
+            <node x="0.0" y="679.5">\App\Http\Controllers\HomeController</node>
+            <node x="596.8498573466476" y="205.17902995720397">\Illuminate\Routing\Controller</node>
+            <node x="658.2499999999999" y="407.0">\App\Http\Controllers\Controller</node>
+            <node x="736.0" y="636.0">\App\Http\Controllers\SuratController</node>
+            <node x="304.0" y="680.0">\App\Http\Controllers\RegisterController</node>
+            <node x="0.0" y="840.0">$PROJECT_DIR$/app/Http/Controllers/Auth</node>
+            <node x="1142.0" y="647.0">\App\Http\Controllers\TableSuratController</node>
           </nodes>
           <notes />
           <edges>
             <edge source="\App\Http\Controllers\SuratKeteranganUsahaController" target="\App\Http\Controllers\Controller">
-              <point x="0.0" y="-35.5" />
-              <point x="1156.0" y="235.0" />
-              <point x="669.0" y="235.0" />
-              <point x="42.0" y="13.5" />
+              <point x="-1.1368683772161603E-13" y="-35.5" />
+              <point x="596.9999999999999" y="616.0" />
+              <point x="701.1249999999999" y="616.0" />
+              <point x="-6.125" y="13.5" />
             </edge>
             <edge source="\App\Http\Controllers\SuratController" target="\App\Http\Controllers\Controller">
-              <point x="0.0" y="-46.5" />
-              <point x="254.5" y="245.0" />
-              <point x="599.0" y="245.0" />
-              <point x="-28.0" y="13.5" />
+              <point x="0.0" y="-79.5" />
+              <point x="817.5" y="616.0" />
+              <point x="713.3749999999999" y="616.0" />
+              <point x="6.125" y="13.5" />
             </edge>
             <edge source="\App\Http\Controllers\SuratKeteranganController" target="\App\Http\Controllers\Controller">
               <point x="0.0" y="-68.5" />
-              <point x="442.5" y="255.0" />
-              <point x="613.0" y="255.0" />
-              <point x="-14.0" y="13.5" />
+              <point x="1020.5" y="606.0" />
+              <point x="725.6249999999999" y="606.0" />
+              <point x="18.375" y="13.5" />
             </edge>
             <edge source="\App\Http\Controllers\TableSuratController" target="\App\Http\Controllers\Controller">
               <point x="0.0" y="-68.5" />
-              <point x="84.0" y="235.0" />
-              <point x="585.0" y="235.0" />
-              <point x="-42.0" y="13.5" />
+              <point x="1226.0" y="596.0" />
+              <point x="737.8749999999999" y="596.0" />
+              <point x="30.625" y="13.5" />
             </edge>
             <edge source="\App\Http\Controllers\HomeController" target="\App\Http\Controllers\Controller">
-              <point x="0.0" y="-47.0" />
-              <point x="0.0" y="13.5" />
+              <point x="0.0" y="-36.0" />
+              <point x="63.0" y="586.0" />
+              <point x="664.3749999999999" y="586.0" />
+              <point x="-42.875" y="13.5" />
             </edge>
             <edge source="\App\Http\Controllers\LoginController" target="\App\Http\Controllers\Controller">
-              <point x="0.0" y="-69.5" />
-              <point x="776.5" y="255.0" />
-              <point x="641.0" y="255.0" />
-              <point x="14.0" y="13.5" />
+              <point x="-33.25" y="-69.5" />
+              <point x="1390.0913461538462" y="586.0" />
+              <point x="750.1249999999999" y="586.0" />
+              <point x="42.875" y="13.5" />
             </edge>
             <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Routing\Controller">
               <point x="0.0" y="-13.5" />
@@ -419,18 +436,24 @@
             </edge>
             <edge source="\App\Http\Controllers\CetakController" target="\App\Http\Controllers\Controller">
               <point x="0.0" y="-24.5" />
-              <point x="940.0" y="245.0" />
-              <point x="655.0" y="245.0" />
-              <point x="28.0" y="13.5" />
+              <point x="215.0" y="596.0" />
+              <point x="676.6249999999999" y="596.0" />
+              <point x="-30.625" y="13.5" />
+            </edge>
+            <edge source="\App\Http\Controllers\RegisterController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-35.5" />
+              <point x="381.0" y="606.0" />
+              <point x="688.8749999999999" y="606.0" />
+              <point x="-18.375" y="13.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="683.5" y="239.5" />
+          <settings layout="Hierarchic Group" zoom="0.9092088197146563" x="761.0" y="404.8880171184023" />
           <SelectedNodes />
           <Categories>
-            <Category>Fields</Category>
-            <Category>Constants</Category>
-            <Category>Constructors</Category>
             <Category>Methods</Category>
+            <Category>Constructors</Category>
+            <Category>Constants</Category>
+            <Category>Fields</Category>
           </Categories>
           <VISIBILITY>private</VISIBILITY>
         </state>

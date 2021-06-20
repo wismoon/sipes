@@ -55,7 +55,13 @@
                             <td>{{ $row -> alamat }}</td>
                             <td>{{ $row -> nohp }}</td>
                             <td>{{ $row -> jenis_surat }}</td>
-                            <td>{{ $row -> status }}</td>
+                            <td>
+                                @if ($row -> status == 'selesai')
+                                    <div class="badge badge-success">{{ $row -> status }}</div>
+                                @else
+                                    <div class="badge badge-warning">{{ $row -> status }}</div>
+                                @endif
+                            </td>
                             <td>
 
                                     <a href="#" class="btn btn-sm btn-warning editbtn"  data-form="{{ $row }}">
@@ -192,11 +198,12 @@
     });
     $(function () {
 
-        $('#tbl').DataTable({
-            "columnDefs": [
-                { "sortable": false, "targets": [2,3] }
-            ]
-        });
+        $('#tbl').DataTable( {
+        resposive:true,
+        "columnDefs": [
+            { "sortable": false, "targets": [3,4] }
+        ],
+    } );
 
         $('.editbtn').click(function () {
         $('#modal-md').modal('show');

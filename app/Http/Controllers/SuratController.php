@@ -27,7 +27,7 @@ class SuratController extends Controller
     {
         $request->validate([
             // 'tanggal' => '',
-            // 'nomorsurat' => '',
+            // 'nomorsurat' => 'required',
             'nama' => 'required',
             'tempatlahir' => 'required',
             'tanggallahir' => 'required',
@@ -38,13 +38,16 @@ class SuratController extends Controller
             'nohp' => 'required',
             'namausaha' => 'required',
             'alamatusaha' => 'required',
-            'file_syarat' => 'required:mimes:pdf',
+            'keterangan' => 'required',
+            'jenis_surat' => 'required',
+            'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
         ]);
 
-        //dd($request->file_syarat);
+        // dd($request->file_syarat);
 
         $fileName = $request->file_syarat->getClientOriginalName().'-'.time().'.'.$request->file_syarat->extension();
+        $request->file_syarat->move(public_path('data'), $fileName);
 
         Surat::create([
             'tanggal' => date('Y-m-d H:i:s'),
@@ -59,12 +62,14 @@ class SuratController extends Controller
             'nohp' => $request->nohp,
             'namausaha' => $request->namausaha,
             'alamatusaha' => $request->alamatusaha,
+            'keterangan' => $request->keterangan,
+            'jenis_syarat' => $request->jenis_syarat,
             'file_syarat' => $fileName,
         ]);
 
         // dd($request);
 
-        return redirect('/')->with('ajukanSKU', 'Surat');
+        return redirect('/')->with('ajukanSKUH', 'Surat');
 
     }
 
@@ -72,7 +77,7 @@ class SuratController extends Controller
     {
         $request->validate([
             // 'tanggal' => '',
-            // 'nomorsurat' => '',
+            // 'nomorsurat' => 'required',
             'nama' => 'required',
             'tempatlahir' => 'required',
             'tanggallahir' => 'required',
@@ -81,13 +86,16 @@ class SuratController extends Controller
             'pekerjaan' => 'required',
             'alamat' => 'required',
             'nohp' => 'required',
-            'file_syarat' => 'required:mimes:pdf',
+            'keterangan' => 'required',
+            'jenis_surat' => 'required',
+            'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
         ]);
 
-        //dd($request->file_syarat);
+        // dd($request->file_syarat);
 
         $fileName = $request->file_syarat->getClientOriginalName().'-'.time().'.'.$request->file_syarat->extension();
+        $request->file_syarat->move(public_path('data'), $fileName);
 
         Surat::create([
             'tanggal' => date('Y-m-d H:i:s'),
@@ -100,12 +108,14 @@ class SuratController extends Controller
             'pekerjaan' => $request->pekerjaan,
             'alamat' => $request->alamat,
             'nohp' => $request->nohp,
+            'keterangan' => $request->keterangan,
+            'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);
 
         // dd($request);
 
-        return redirect('/')->with('ajukanSKUH', 'Surat');
+        return redirect('/')->with('ajukanSKU', 'Surat');
 
     }
 

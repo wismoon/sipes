@@ -12,23 +12,23 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('Home');
-    }
+    // /**
+    //  * Display a listing of the resource.
+    //  *
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function index()
+    // {
+    //     return view('Home');
+    // }
 
     public function adminHome()
     {
-        
+
         $selesai = Surat::where('status', 'selesai')->count();
         $diproses = Surat::where('status', 'diproses')->count();
         return view('adminHome', compact('selesai', 'diproses'));
     }
 
-    
+
 }
