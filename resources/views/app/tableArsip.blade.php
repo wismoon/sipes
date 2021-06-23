@@ -8,7 +8,7 @@
       <h1>Arsip</h1>
     </div>
     <div class="btn mb-2">
-        <button id="btn-cetak" onclick="excel()" class="btn btn-success">Tombol</button>
+        <button id="btn-cetak" onclick="excel()" class="btn btn-success">Cetak Excel</button>
     </div>
     @if (session()->has('success'))
     <div class="alert alert-success alert-dismissible show fade">

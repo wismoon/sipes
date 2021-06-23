@@ -33,8 +33,8 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:207.29px;top:54.48px" class="cls_002"><span class="cls_002">KECAMATAN TAMBANG</span></div>
 <div style="position:absolute;left:111.74px;top:81.98px" class="cls_003"><span class="cls_003">KANTOR KEPALA DESA TARAI BANGUN</span></div>
 <div style="position:absolute;left:205.85px;top:110.54px" class="cls_004"><span class="cls_004">Alamat: Jl. Kubang Raya - Tarai Bangun Kabupaten Kampar</span></div>
-<div style="position:absolute;left:208.01px;top:166.46px" class="cls_014"><span class="cls_014">SURAT KETERANGAN USAHA</span></div>
-<div style="position:absolute;left:215.81px;top:186.38px" class="cls_009"><span class="cls_009">Nomor : 510 /SK/TRB/ V / 2021/</span></div>
+<div style="position:absolute;left:163.01px;top:166.46px" class="cls_014"><span class="cls_014">SURAT KETERANGAN TIDAK MAMPU MISKIN</span></div>
+<div style="position:absolute;left:215.81px;top:186.38px" class="cls_009"><span class="cls_009">Nomor : {{$surat->nomorsurat}}</span></div>
 <div class="ml-3 mr-4" style="position:absolute;left:57.74px;top:220.58px;text-align: justify; max-width:490px; line-height: 1.5;">
 <p style="font-size: 14px">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kepala Desa Tarai Bangun Kecamatan Tambang Kabupaten Kampar dengan ini menerangkan bahwa :
@@ -63,11 +63,11 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 
 <div class="cls_011" style="position:absolute;left:57.74px;top:460.85px;text-align: justify; max-width:490px; line-height: 1.5;">
 <p style="font-size: 14px">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nama tersebut diatas saat ini <span class="cls_012" style="text-transform: capitalize"> Memiliki Usaha {{$surat->namausaha}} </span> terletak di <span style="text-transform: capitalize">{{$surat->alamatusaha}}</span> Dusun IV Tarab Mulia Desa Tarai Bangun Kecamatan Tambang Kabupaten Kamper dan surat ini diberikan guna Persyaratan Pengurusan Pengajuan Tambahan Modal Usaha
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nama tersebut diatas adalah benar warga kami yang saat ini berdomisili di {{$surat->alamatlengkap}} Dusun Tarab Mulia Desa Tarai Bangun Kecamatan Tambang Kabupaten Kampar dan merupakan salah satu dari warga kami yang tergolong <span class="cls_012" style="text-transform: capitalize"> TIDAK MAMPU/MISKIN </span> dan surat ini diberikan guna Persyaratan Pengurusan <span class="cls_012">{{$surat->pengurusan}}. </span>
 </p>
 </div>
 
-<div class="ml-3 mr-3" style="position:absolute;left:57.74px;top:560.71px;;text-align: justify; max-width:490px; line-height: 1.5;">
+<div class="ml-3 mr-3" style="position:absolute;left:57.74px;top:580.71px;;text-align: justify; max-width:490px; line-height: 1.5;">
 <p style="font-size: 14px">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demikian surat keterangan ini kami buat dengan sebenarnya untuk dapat dipergunakan sebagaimana perlunya.
 </p>

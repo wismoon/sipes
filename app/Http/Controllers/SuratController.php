@@ -63,7 +63,7 @@ class SuratController extends Controller
             'namausaha' => $request->namausaha,
             'alamatusaha' => $request->alamatusaha,
             'keterangan' => $request->keterangan,
-            'jenis_syarat' => $request->jenis_syarat,
+            'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);
 
@@ -87,6 +87,9 @@ class SuratController extends Controller
             'alamat' => 'required',
             'nohp' => 'required',
             'keterangan' => 'required',
+            'alamatlengkap' => 'required',
+            'pengurusan' => 'required',
+            'judulkp' => 'required',
             'jenis_surat' => 'required',
             'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
@@ -109,6 +112,9 @@ class SuratController extends Controller
             'alamat' => $request->alamat,
             'nohp' => $request->nohp,
             'keterangan' => $request->keterangan,
+            'alamatlengkap' => $request->alamatlengkap,
+            'pengurusan' => $request->pengurusan,
+            'judulkp' => $request->judulkp,
             'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);

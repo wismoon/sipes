@@ -5,6 +5,7 @@
     @isset ($value) value="{{old("$field") ? old("$field") : $value}}"
     @else value="{{old($field)}}"
     @endisset>
+    {{-- <small for="{{$field}}">{{$small}}</small> --}}
 
 
 

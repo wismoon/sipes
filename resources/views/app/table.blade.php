@@ -54,7 +54,7 @@
                             <td>{{ $row -> pekerjaan }}</td>
                             <td>{{ $row -> alamat }}</td>
                             <td>{{ $row -> nohp }}</td>
-                            <td>{{ $row -> jenis_surat }}</td>
+                            <td>{{ $row -> keterangan }}</td>
                             <td>
                                 @if ($row -> status == 'selesai')
                                     <div class="badge badge-success">{{ $row -> status }}</div>

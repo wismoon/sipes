@@ -16,22 +16,63 @@ class SuratKeteranganController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            // 'tanggal' => 'required',
-            // 'nomorsurat' => 'required',
-            'nama' => 'required',
-            'tempatlahir' => 'required',
-            'tanggallahir' => 'required',
-            'jeniskelamin' => 'required',
-            'agama' => 'required',
-            'pekerjaan' => 'required',
-            'alamat' => 'required',
-            'nohp' => 'required',
-            'keterangan' => 'required',
-            'jenis_surat' => 'required',
-            'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
+        // if ($request->keterangan == 'sk.miskin'){
+            $request->validate([
+                // 'tanggal' => 'required',
+                // 'nomorsurat' => 'required',
+                'nama' => 'required',
+                'tempatlahir' => 'required',
+                'tanggallahir' => 'required',
+                'jeniskelamin' => 'required',
+                'agama' => 'required',
+                'pekerjaan' => 'required',
+                'alamat' => 'required',
+                'nohp' => 'required',
+                'keterangan' => 'required',
+                'alamatlengkap' => '',
+                'pengurusan' => '',
+                'judulkp' => '',
+                'jenis_surat' => 'required',
+                'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
-        ]);
+            ]);
+//         }elseif ($request->keterangan == 'sk.kp/kkn'){
+//             $request->validate([
+// // 'tanggal' => 'required',
+//                 // 'nomorsurat' => 'required',
+//                 'nama' => 'required',
+//                 'tempatlahir' => 'required',
+//                 'tanggallahir' => 'required',
+//                 'jeniskelamin' => 'required',
+//                 'agama' => 'required',
+//                 'pekerjaan' => 'required',
+//                 'alamat' => 'required',
+//                 'nohp' => 'required',
+//                 'keterangan' => 'required',
+//                 'judulkp' => 'required',
+//                 'jenis_surat' => 'required',
+//                 'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
+//             ]);
+//         }else{
+//             $request->validate([
+//                 // 'tanggal' => 'required',
+//                 // 'nomorsurat' => 'required',
+//                 'nama' => 'required',
+//                 'tempatlahir' => 'required',
+//                 'tanggallahir' => 'required',
+//                 'jeniskelamin' => 'required',
+//                 'agama' => 'required',
+//                 'pekerjaan' => 'required',
+//                 'alamat' => 'required',
+//                 'nohp' => 'required',
+//                 'keterangan' => 'required',
+//                 'alamatlengkap' => 'required',
+//                 'pengurusan' => 'required',
+//                 'judulkp' => 'required',
+//                 'jenis_surat' => 'required',
+//                 'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
+//             ]);
+//         }
 
         //dd($request->file_syarat);
 
@@ -51,11 +92,14 @@ class SuratKeteranganController extends Controller
             'alamat' => $request->alamat,
             'nohp' => $request->nohp,
             'keterangan' => $request->keterangan,
+            'alamatlengkap' => $request->alamatlengkap,
+            'pengurusan' => $request->pengurusan,
+            'judulkp' => $request->judulkp,
             'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);
 
-        //dd($request);
+        // dd($request);
 
 
         return redirect('surat/daftarsurat')->with('tambahSKU', 'Surat Umum');

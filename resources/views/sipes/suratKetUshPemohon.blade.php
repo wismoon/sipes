@@ -27,7 +27,8 @@
                 <x-input field="alamat" label="Alamat" type="text"/>
                 <x-input field="nohp" label="No.Handphone" type="text"/>
                 <x-input field="namausaha" label="Nama Usaha" type="text"/>
-                <x-input field="alamatusaha" label="Alamat Usaha Lengkap" type="text"/>
+                <x-input field="alamatusaha" label="Alamat Usaha Lengkap" type="text" placeholder="Jl.Saudara Perum Indah Hari Sanda RT.03 RW.03 Dusun II Tarab Mandiri"/>
+                <x-input field="pengurusan" label="Syarat Pengurusan" type="text" placeholder="Pengajuan Modal Tambahan Usaha.."/>
                 <input type="hidden" value="sk.usaha" name="keterangan">
                 <input type="hidden" value="surat keterangan usaha" name="jenis_surat">
                 {{-- <x-inputSelect field="jeniskelamin" label="Jenis Kelamin" type="select"/> --}}

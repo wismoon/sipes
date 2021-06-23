@@ -72,7 +72,7 @@
                     <a class="page-scroll" href="#home">Home</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#alur">Persyaratan</a>
+                    <a class="page-scroll" href="#persyaratan">Persyaratan</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#persyaratan">Pengajuan Surat</a>

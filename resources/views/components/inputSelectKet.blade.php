@@ -6,7 +6,6 @@
     @else value="{{old($field)}}"
     @endisset>
         <option value="">-- Pilih Jenis Surat --</option>
-        <option value="sk.penghasilan">Penghasilan</option>
         <option value="sk.miskin">Miskin</option>
         <option value="sk.kp/kkn">KP/KKN</option>
     </select>

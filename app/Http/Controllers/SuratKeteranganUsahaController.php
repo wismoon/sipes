@@ -28,6 +28,7 @@ class SuratKeteranganUsahaController extends Controller
             'namausaha' => 'required',
             'alamatusaha' => 'required',
             'keterangan' => 'required',
+            'pengurusan' => 'required',
             'jenis_surat' => 'required',
             'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
@@ -52,6 +53,7 @@ class SuratKeteranganUsahaController extends Controller
             'namausaha' => $request->namausaha,
             'alamatusaha' => $request->alamatusaha,
             'keterangan' => $request->keterangan,
+            'pengurusan' => $request->pengurusan,
             'jenis_surat' => $request->jenis_surat,
             'file_syarat' => $fileName,
         ]);

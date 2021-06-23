@@ -28,6 +28,9 @@ class CreateSuratTable extends Migration
             $table->string('namausaha')->nullable();
             $table->string('alamatusaha')->nullable();
             $table->string('keterangan')->nullable();
+            $table->string('alamatlengkap')->nullable();
+            $table->string('judulkp')->nullable();
+            $table->string('pengurusan')->nullable();
             $table->enum('jenis_surat',
             [
                 'surat keterangan usaha',

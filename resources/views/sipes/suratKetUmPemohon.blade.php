@@ -27,7 +27,14 @@
                 <x-input field="pekerjaan" label="Pekerjaan" type="text"/>
                 <x-input field="alamat" label="Alamat" type="text"/>
                 <x-input field="nohp" label="No.Handphone" type="text"/>
-                <x-inputSelectKet field="keterangan" label="Keterangan" type="select"/>
+                <x-inputSelectKet onchange="select(this.value)" field="keterangan" label="Keterangan" type="select"/>
+                <div id="tes" class="md-1">
+                    <x-input field="alamatlengkap" label="Alamat Lengkap" type="text" placeholder="Jl.Saudara Perum Indah Hari Sanda RT.03 RW.03 Dusun II Tarab Mandiri" small="TES"/>
+                    <x-input field="pengurusan" label="Syarat Mengurus" type="text" placeholder="Pendaftaran Sekolah..."/>
+                </div>
+                <div id="tes2">
+                    <x-input field="judulkp" label="Judul KP" type="text"/>
+                </div>
                 <input type="hidden" value="surat keterangan umum" name="jenis_surat">
                 {{-- <x-inputSelect field="jeniskelamin" label="Jenis Kelamin" type="select"/> --}}
                 <x-inputFile field="thumbnail"/>
@@ -37,3 +44,23 @@
 </section>
 </body>
 @endsection
+@push('javascript')
+
+<script type="text/javascript">
+    $(function(){
+        $('#tes').hide();
+        $('#tes2').hide();
+        $('#keterangan').change(function(){
+            if ($(this).val()=="sk.miskin") {
+                $('#tes').show();
+                $('#tes2').hide();
+            }else
+            {
+                $('#tes2').show();
+                $('#tes').hide();
+            }
+        });
+    });
+
+</script>
+@endpush

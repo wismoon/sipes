@@ -33,10 +33,10 @@ class TableSuratController extends Controller
 
     }
 
-    public function export_excel()
-    {
-        return Excel::download(new ArsipExport, 'Arsip.xlsx');
-    }
+    // public function export_excel()
+    // {
+    //     return Excel::download(new ArsipExport, 'Arsip.xlsx');
+    // }
 
     public function update(Request $request, $id)
     {
