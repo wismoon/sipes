@@ -152,6 +152,22 @@
                                 <label>No.Handphone</label>
                                 <input type="text" class="form-control" id="nohp" name="nohp" readonly>
                             </div>
+                            <div class="form-group ket">
+                                <label>Judul KP</label>
+                                <input type="text" class="form-control" id="judulkp" name="judulkp" readonly>
+                            </div>
+                            <div class="form-group alt">
+                                <label>Alamat Lengkap</label>
+                                <input type="text" class="form-control" id="alamatlengkap" name="alamatlengkap" readonly>
+                            </div>
+                            <div class="form-group usaha">
+                                <label>Nama Usaha</label>
+                                <input type="text" class="form-control" id="namausaha" name="namausaha" readonly>
+                            </div>
+                            <div class="form-group usaha">
+                                <label>Alamat Usaha</label>
+                                <input type="text" class="form-control" id="alamatusaha" name="alamatusaha" readonly>
+                            </div>
                             <div class="form-group">
                                 <label>Jenis Surat</label>
                                 <input type="text" class="form-control" id="jenis_surat" name="jenis_surat" readonly>
@@ -214,9 +230,27 @@
         $('#pekerjaan').val(form.pekerjaan);
         $('#alamat').val(form.alamat);
         $('#nohp').val(form.nohp);
+        $('#judulkp').val(form.judulkp);
+        $('#alamatlengkap').val(form.alamatlengkap);
+        $('#namausaha').val(form.namausaha);
+        $('#alamatusaha').val(form.alamatusaha);
         $('#jenis_surat').val(form.jenis_surat);
         $('#status').val(form.status);
         $('#form-update').attr('action', '/table/' + form.id)
+
+        if(form.keterangan == 'sk.kp/kkn'){
+            $('.ket').show();
+            $('.alt').hide();
+            $('.usaha').hide();
+        }else if(form.keterangan == 'sk.miskin'){
+            $('.alt').show();
+            $('.usaha').hide();
+            $('.ket').hide();
+        }else{
+            $('.usaha').show();
+            $('.alt').hide();
+            $('.ket').hide();
+        }
     })
     });
     </script>

@@ -29,7 +29,7 @@
                 <x-input field="nohp" label="No.Handphone" type="text"/>
                 <x-inputSelectKet onchange="select(this.value)" field="keterangan" label="Keterangan" type="select"/>
                 <div id="tes">
-                <x-input field="alamatlengkap" label="Alamat Lengkap" type="text" placeholder="Jl.Saudara Perum Indah Hari Sanda RT.03 RW.03 Dusun II Tarab Mandiri" small="TES"/>
+                <x-input field="alamatlengkap" label="Alamat Lengkap" type="text" placeholder="RT.03 RW.03 Dusun II Tarab Mandiri"/>
                 <x-input field="pengurusan" label="Syarat Mengurus" type="text" placeholder="Pendaftaran Sekolah..."/>
                 </div>
                 <div id="tes2">

@@ -46,9 +46,11 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:97.62px;top:325.77px" class="cls_011"><span class="cls_011">Tempat/Tanggal Lahir</span></div>
 <div style="position:absolute;left:239.49px;top:325.77px" class="cls_011"><span class="cls_011">: {{$surat->tempatlahir}},
                                 <?php
-                                $date = new DateTime($surat->tanggallahir);
-                                echo $date->format('d F Y')
-                                ?></span>
+                                use Carbon\Carbon;
+                                /* LL / D MMM Y */
+                                echo Carbon::parse($surat->tanggallahir)->locale('id')->isoformat('LL');
+                                ?>
+                                </span>
 </div>
 <div style="position:absolute;left:97.62px;top:348.21px" class="cls_011"><span class="cls_011">Kewarganegaraan</span></div>
 <div style="position:absolute;left:239.49px;top:348.21px" class="cls_011"><span class="cls_011">: Indonesia</span></div>
@@ -61,9 +63,9 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:97.62px;top:437.97px" class="cls_011"><span class="cls_011">Alamat</span></div>
 <div style="position:absolute;left:239.49px;top:437.97px" class="cls_011"><span class="cls_011">: {{$surat->alamat}}</span></div>
 
-<div class="cls_011" style="position:absolute;left:57.74px;top:460.85px;text-align: justify; max-width:490px; line-height: 1.5;">
+<div class="cls_011 fulljustify" style="position:absolute;left:57.74px;top:460.85px;text-align: justify; max-width:490px; line-height: 1.5;">
 <p style="font-size: 14px">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nama tersebut diatas saat ini <span class="cls_012" style="text-transform: capitalize"> Memiliki Usaha {{$surat->namausaha}} </span> terletak di <span style="text-transform: capitalize">{{$surat->alamatusaha}}</span> Dusun IV Tarab Mulia Desa Tarai Bangun Kecamatan Tambang Kabupaten Kamper dan surat ini diberikan guna Persyaratan Pengurusan {{$surat->pengurusan}}.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nama tersebut diatas saat ini <span class="cls_012" style="text-transform: capitalize"> Memiliki Usaha {{$surat->namausaha}} </span> terletak di {{$surat->alamat}} <span style="text-transform: capitalize">{{$surat->alamatusaha}}</span> Dusun IV Tarab Mulia Desa Tarai Bangun Kecamatan Tambang Kabupaten Kamper dan surat ini diberikan guna Persyaratan Pengurusan {{$surat->pengurusan}}.
 </p>
 </div>
 
@@ -77,9 +79,10 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:319.01px;top:691.75px" class="cls_007"><span class="cls_007">Pada Tanggal</span></div>
 <div style="position:absolute;left:442.03px;top:691.75px" class="cls_007"><span class="cls_007">:
                                 <?php
-                                $date = new DateTime($surat->tanggal);
-                                echo $date->format('d F Y')
-                                ?></span>
+                                /* LL / D MMM Y */
+                                echo Carbon::parse($surat->tanggal)->locale('id')->isoformat('LL');
+                                ?>
+                                </span>
 </div>
 <div style="position:absolute;left:319.01px;top:712.39px" class="cls_007"><span class="cls_007">KEPALA DESA TARAI BANGUN</span></div>
 <div style="position:absolute;left:334.03px;top:798.58px" class="cls_015"><span class="cls_015">ANDRA MAISTAR, S.SOS</span></div>
