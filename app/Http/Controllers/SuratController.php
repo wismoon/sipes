@@ -87,9 +87,9 @@ class SuratController extends Controller
             'alamat' => 'required',
             'nohp' => 'required',
             'keterangan' => 'required',
-            'alamatlengkap' => 'required',
-            'pengurusan' => 'required',
-            'judulkp' => 'required',
+            'alamatlengkap' => '',
+            'pengurusan' => '',
+            'judulkp' => '',
             'jenis_surat' => 'required',
             'file_syarat' => 'required|mimetypes:application/pdf|max:10000',
 
