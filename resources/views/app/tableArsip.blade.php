@@ -81,7 +81,7 @@
                                     <a href="#" class="btn btn-sm btn-warning editbtn"  data-form="{{ $row }}">
                                         <i class="fas fa-edit mr-1"></i>
                                     </a>
-                                    <a href="{{route('cetak', ['surat'=>$row -> id])}}" class=" btn-info btn btn-sm">
+                                    <a target="_blank" href="{{route('cetak', ['surat'=>$row -> id])}}" class=" btn-info btn btn-sm">
                                         <i class="fas fa-print"></i>
                                     </a>
                                 </form>
