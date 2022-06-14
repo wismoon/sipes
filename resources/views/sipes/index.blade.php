@@ -8,7 +8,7 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="{{asset('image/Logo Kab-Kampar.png')}}" rel="icon">
+  <link href="{{asset('image/logo_rokan_hilir.png')}}" rel="icon">
 
 
   <!-- Google Fonts -->
@@ -60,7 +60,7 @@
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                   <!-- Brand -->
-                  <img src="{{asset('image/Logo Kab-Kampar.png')}}" alt="" title="" style="float: left;margin-right: 12px" width="50px">
+                  <img src="{{asset('image/logo_rokan_hilir.png')}}" alt="" title="" style="float: left;margin-right: 12px" width="50px">
                     <a class="navbar-brand page-scroll sticky-logo" href="index.html">
                     <h1><span>S</span>IPES</h1>
                     </a>
@@ -97,7 +97,7 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="{{asset('image/Kantor.jpg')}}" alt="" title="#slider-direction-1" />
+        <img src="{{asset('image/foto_gedung.jpg')}}" alt="" title="#slider-direction-1" />
       </div>
 
       <!-- direction 1 -->
@@ -112,7 +112,7 @@
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Kantor Desa Tarai Bangun Kecamatan Tambang Kabupaten Kampar</h1>
+                  <h1 class="title2">Kantor Desa Sungai Kubu Kecamatan Kubu Kabupaten Rokan Hilir</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
@@ -145,7 +145,7 @@
           <div class="well-left">
             <div class="single-well">
               <a href="#">
-								  <img src="{{asset('image/Kantor.jpg')}}" alt="">
+								  <img src="{{asset('image/foto_gedung.jpg')}}" alt="">
 								</a>
             </div>
           </div>
@@ -252,7 +252,7 @@
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
               -->
-              Designed by <a href="#">Muhammad Wisnu Fauzi</a>
+              Designed by <a href="#">Gusrian Hidayat</a>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
     <style type="text/css">
 <!--
         @page {margin: 0px;}
-span.cls_002{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_002{font-family:Arial,serif;font-size:22.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
 div.cls_002{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
 span.cls_003{font-family:Times,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
 div.cls_003{font-family:Times,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
@@ -28,16 +28,17 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <body>
 <div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:1008px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
-<img src="{{asset('image/background2.jpg')}}" width=612 height=1008></div>
-<div style="position:absolute;left:135.26px;top:26.88px" class="cls_002"><span class="cls_002">PEMERINTAH KABUPATEN KAMPAR</span></div>
-<div style="position:absolute;left:207.29px;top:54.48px" class="cls_002"><span class="cls_002">KECAMATAN TAMBANG</span></div>
-<div style="position:absolute;left:111.74px;top:81.98px" class="cls_003"><span class="cls_003">KANTOR KEPALA DESA TARAI BANGUN</span></div>
-<div style="position:absolute;left:205.85px;top:110.54px" class="cls_004"><span class="cls_004">Alamat: Jl. Kubang Raya - Tarai Bangun Kabupaten Kampar</span></div>
+<img src="{{asset('image/background3.jpg')}}" width=612 height=1008></div>
+<div style="position:absolute;left:120.26px;top:26.88px" class="cls_002"><span class="cls_002">PEMERINTAH KABUPATEN ROKAN HILIR</span></div>
+<div style="position:absolute;left:230.29px;top:54.48px" class="cls_003"><span class="cls_003">KECAMATAN KUBU</span></div>
+<div style="position:absolute;left:153.74px;top:81.98px" class="cls_003"><span class="cls_003">KEPENGHULUAN SUNGAI KUBU</span></div>
+<div style="position:absolute;left:120.85px;top:110.54px" class="cls_004"><span class="cls_004">Alamat: Jl. Jendral Sudirman</span></div>
+<div style="position:absolute;left:505.85px;top:110.54px" class="cls_004"><span class="cls_004">Kode Pos 28991</span></div>
 <div style="position:absolute;left:163.01px;top:166.46px" class="cls_014"><span class="cls_014">SURAT KETERANGAN TIDAK MAMPU MISKIN</span></div>
 <div style="position:absolute;left:215.81px;top:186.38px" class="cls_009"><span class="cls_009">Nomor : {{$surat->nomorsurat}}</span></div>
 <div class="ml-3 mr-4" style="position:absolute;left:57.74px;top:220.58px;text-align: justify; max-width:490px; line-height: 1.5;">
 <p style="font-size: 14px">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kepala Desa Tarai Bangun Kecamatan Tambang Kabupaten Kampar dengan ini menerangkan bahwa :
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kepala Desa Sungai Kubu Kecataman Kubu Kabupaten Rokan Hilir dengan ini menerangkan bahwa :
 
 </p>
 </div>
@@ -65,7 +66,7 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 
 <div class="cls_011" style="position:absolute;left:57.74px;top:460.85px;text-align: justify; max-width:490px; line-height: 1.5;">
 <p style="font-size: 14px">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nama tersebut diatas adalah benar warga kami yang saat ini berdomisili di {{$surat->alamat}} {{$surat->alamatlengkap}} Dusun Tarab Mulia Desa Tarai Bangun Kecamatan Tambang Kabupaten Kampar dan merupakan salah satu dari warga kami yang tergolong <span class="cls_012" style="text-transform: capitalize"> TIDAK MAMPU/MISKIN </span> dan surat ini diberikan guna Persyaratan Pengurusan <span class="cls_012">{{$surat->pengurusan}}. </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nama tersebut diatas adalah benar warga kami yang saat ini berdomisili di {{$surat->alamat}} Desa Sungai Kubu Kecataman Kubu Kabupaten Rokan Hilir dan merupakan salah satu dari warga kami yang tergolong <span class="cls_012" style="text-transform: capitalize"> TIDAK MAMPU/MISKIN </span> dan surat ini diberikan guna Persyaratan Pengurusan <span class="cls_012">{{$surat->pengurusan}}. </span>
 </p>
 </div>
 
@@ -75,7 +76,7 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 </p>
 </div>
 <div style="position:absolute;left:319.01px;top:670.99px" class="cls_007"><span class="cls_007">Dikeluarkan di</span></div>
-<div style="position:absolute;left:442.03px;top:670.99px" class="cls_007"><span class="cls_007">: Tarai Bangun</span></div>
+<div style="position:absolute;left:442.03px;top:670.99px" class="cls_007"><span class="cls_007">: Sungai Kubu</span></div>
 <div style="position:absolute;left:319.01px;top:691.75px" class="cls_007"><span class="cls_007">Pada Tanggal</span></div>
 <div style="position:absolute;left:442.03px;top:691.75px" class="cls_007"><span class="cls_007">:
                                 <?php
@@ -84,8 +85,8 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
                                 ?>
                                 </span>
 </div>
-<div style="position:absolute;left:319.01px;top:712.39px" class="cls_007"><span class="cls_007">KEPALA DESA TARAI BANGUN</span></div>
-<div style="position:absolute;left:334.03px;top:798.58px" class="cls_015"><span class="cls_015">ANDRA MAISTAR, S.SOS</span></div>
+<div style="position:absolute;left:319.01px;top:712.39px" class="cls_007"><span class="cls_007">KEPALA DESA SUNGAI KUBU</span></div>
+<div style="position:absolute;left:374.03px;top:798.58px" class="cls_015"><span class="cls_015">BULKRIM</span></div>
 </div>
 
 </body>

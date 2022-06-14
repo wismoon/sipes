@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
                 <div class="card-body">
-                    Selamat Datang di Sistem Pelayanan Pengajuan Surat Desa Tarai Bangun.
+                    Selamat Datang di Sistem Pelayanan Pengajuan Surat Desa Sungai Kubu.
                 </div>
 
             </div>

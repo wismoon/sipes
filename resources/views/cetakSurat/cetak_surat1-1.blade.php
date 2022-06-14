@@ -29,10 +29,10 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:1008px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="{{asset('image/background2.jpg')}}" width=612 height=1008></div>
-<div style="position:absolute;left:135.26px;top:26.88px" class="cls_002"><span class="cls_002">PEMERINTAH KABUPATEN KAMPAR</span></div>
-<div style="position:absolute;left:207.29px;top:54.48px" class="cls_002"><span class="cls_002">KECAMATAN TAMBANG</span></div>
-<div style="position:absolute;left:111.74px;top:81.98px" class="cls_003"><span class="cls_003">KANTOR KEPALA DESA TARAI BANGUN</span></div>
-<div style="position:absolute;left:205.85px;top:110.54px" class="cls_004"><span class="cls_004">Alamat: Jl. Kubang Raya - Tarai Bangun Kabupaten Kampar</span></div>
+<div style="position:absolute;left:135.26px;top:26.88px" class="cls_002"><span class="cls_002">PEMERINTAH KABUPATEN ROKAN HILIR</span></div>
+<div style="position:absolute;left:207.29px;top:54.48px" class="cls_002"><span class="cls_002">KECAMATAN KUBU</span></div>
+<div style="position:absolute;left:111.74px;top:81.98px" class="cls_003"><span class="cls_003">KEPENGHULUAN SUNGAI KUBU</span></div>
+<div style="position:absolute;left:205.85px;top:110.54px" class="cls_004"><span class="cls_004">Alamat: Jl. Jendral Sudirman</span></div>
 <div style="position:absolute;left:208.01px;top:166.46px" class="cls_014"><span class="cls_014">SURAT KETERANGAN USAHA</span></div>
 <div style="position:absolute;left:215.81px;top:186.38px" class="cls_009"><span class="cls_009">Nomor : 510 /SK/TRB/ V / 2021/</span></div>
 <div class="ml-3 mr-4" style="position:absolute;left:57.74px;top:220.58px;text-align: justify; max-width:490px; line-height: 1.5;">

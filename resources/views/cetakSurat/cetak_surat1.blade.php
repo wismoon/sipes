@@ -29,7 +29,7 @@ div.cls_015{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:1008px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="{{asset('image/background2.jpg')}}" width=612 height=1008></div>
-<div style="position:absolute;left:135.26px;top:26.88px" class="cls_002"><span class="cls_002">PEMERINTAH KABUPATEN KAMPAR</span></div>
+<div style="position:absolute;left:135.26px;top:26.88px" class="cls_002"><span class="cls_002">PEMERINTAH KABUPATEN KAMPAR1</span></div>
 <div style="position:absolute;left:207.29px;top:54.48px" class="cls_002"><span class="cls_002">KECAMATAN TAMBANG</span></div>
 <div style="position:absolute;left:111.74px;top:81.98px" class="cls_003"><span class="cls_003">KANTOR KEPALA DESA TARAI BANGUN</span></div>
 <div style="position:absolute;left:205.85px;top:110.54px" class="cls_004"><span class="cls_004">Alamat: Jl. Kubang Raya - Tarai Bangun Kabupaten Kampar</span></div>

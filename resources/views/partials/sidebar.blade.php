@@ -1,6 +1,6 @@
 <aside id="sidebar-wrapper">
   <div class="sidebar text-center mt-2">
-    <img href="" src="{{asset('image/Logo Kab-Kampar.png')}}" style="width: 120px; height: 180px">
+    <img href="" src="{{asset('image/logo_rokan_hilir.png')}}" style="width: 120px; height: 180px">
   </div>
   <br>
   <div>
